@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+#maincontainer {
+	width: 100%;
+}
+
+body {
+	background-color: rgba(33, 33, 33, .95);
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
+}
+
+blockquote {
+	font-family: 'Esteban', serif;
+	font-style: oblique;
+	font-weight: 500;
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+}
+
+#hero{
+	position: relative;
+    overflow: hidden;
+ 	background-color: #007cd9;
+ 	height: 920px;
+ 	margin-top: 70px;
+ 	border: 2px solid #44494c;
+}
+
+
+#main-container{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+	background-color: #414f59;
+	padding: 40px 60px;
+}
+
+nav a{
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	width: 14%;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+nav li {
+	list-style: none;
+	font-family: 'Esteban', serif;
+}
+ 
+a:link {
+    color: grey;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover {
+	color: white;
+	transition: color 0.4s ease-in;
+}
+
+.quote {
+	font-size: 2.5em;
+}
+/*https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
+https://css-tricks.com/almanac/properties/b/background-image/
+*/
