@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+h2, h3 {
+	color: #dcbb6f;
+	font-size: 2em;
+	font-family: 'Old Standard TT', serif;
+}
+
+h4 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 1.2em;
+}
+
+#container {
+	background-color: #f8f8f8;
+	border: 2px solid #bebdc6;
+	width: 35%;
+	height: auto;
+	box-shadow: inset 0px -2px 18px 0px rgba(79,79,79,0.2);
+	padding: 20px;
+	overflow: hidden;
+}
+
+h4 {
+	color: #dcbb6f;
+	font-weight: 250;
+	margin-bottom: 0;
+}
+
+h2 {
+	margin-bottom: 0;
+	line-height: .4;
+	font-weight: 200;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+.backprofile {
+	text-decoration: none;
+	color: #fb656c;
+	font-weight: 800;
+	font-family: 'Cabin', sans-serif;
+}
+
+.big {
+	float: left;
+	width: 60%;
+	padding-right: 5px;
+	padding-bottom: 20px;
+}
+
+.small {
+	float: right;
+	width: 40%;
+}
+
+.topimage {
+	margin-top: 22px;
+}
+
+
+.clearfix {
+	clear: both;
+}
+
+.pborder {
+	border:2px inset #d3d3d3;
+}
+
+.pgrey {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.pgrey:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
+
+/*source for filter: https://css-tricks.com/almanac/properties/f/filter/*/
