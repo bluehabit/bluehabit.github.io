@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+html { 
+ 	background: url(images/forestd.jpg) no-repeat center center fixed; 
+ 	 background-size: cover;
+}
+
+
+#recruit {
+	background-color: #b7ae8b;
+	width: 40%;
+	box-shadow: 2px 4px 30px 7px rgba(0,0,0,1);
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+legend {
+	font-family: 'Almendra', serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+label {
+	font-family: 'Almendra', serif;
+	font-weight: bold;
+    font-size: 1.5em;
+    color: #121213;
+    display: block;
+}
+
+input {
+	background-color:rgba(46,45,41,.2);
+	border-style: none;
+    width: 33%;
+}
+
+#wax {
+    width:150px; /* you can use % */
+    height: auto;
+}
+
+#sigil {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.winter {
+	font-family: 'Almendra', serif;
+}
+
+#main {
+	margin: 0 auto;
+	width: 50%;
+    padding-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.button {
+    background-color: #697a5f;
+    padding: 10px;
+    width: 33%;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Almendra', serif;
+}
+
+/* Clip text element */
+.clip-text {
+	font-family: 'Almendra', serif;
+    font-size: 6em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+
+/* Background */
+.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background: #000;
+}
+
+/* Change the background position to display letter when the black zone isn't here */
+.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+
+/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
+.clip-text_one {
+    background-image: url(images/grundge.jpg);
+}
+
+
+
+/*
+stark beige: #d4cdb1
+stark green: #7b906f*/

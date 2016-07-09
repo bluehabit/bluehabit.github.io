@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+button {
+	display:;
+}
+
+textarea {
+	padding: 50px;
+	color: red;
+	border-style: none;
+}

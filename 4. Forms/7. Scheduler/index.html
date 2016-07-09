@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scheduling Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div id='main'>
+		<h1>Scheduling Form</h1>
+
+		<form>
+			<input type='date' class='addmargin'>
+			<input type='time' class='addmargin'>
+
+			<select multiple name='time-zones' id='time-zones' class='addmargin'>
+				<option value='Eastern'>Eastern</option>
+				<option value='Central'>Central</option>
+				<option value='Mountain'>Mountain</option>
+				<option value='Pacific'>Pacific</option>
+			</select>
+
+			<textarea placeholder='add a comment here' class='addmargin'></textarea>
+
+			<input type='phone' class='addmargin' placeholder='999-9999'>
+			<input type='email' class='addmargin' placeholder='youremail@domain.com'>
+
+			<button class='addmargin' type='submit'>Submit</button>
+		</form>
+	</div>
+	<a href='../index.html'>Home</a>
+</body>
+</html>

@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+html {
+  background: -webkit-radial-gradient(ellipse, #4dc594, #1e4659);
+  height: 100%;
+}
+
+h1 {
+  color: white;
+  letter-spacing: .034em;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 55px;
+}
+
+p {
+  color: #ebebeb;
+  font-weight: bold;
+  font-size: .9em;
+  text-align: center;
+  line-height: .35em;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+#main {
+  background-color: white;
+  width: 43%;
+  margin: 0 auto;
+  margin-top: 85px;
+  padding: 45px;
+  height: 750px;
+  background: url(images/wave2.jpg) no-repeat center; 
+  background-size: cover;
+  box-shadow: 0px 1px 46px -1px rgba(0,0,0,0.40);
+  position: relative;
+  background: 
+    linear-gradient(
+      rgba(34, 76, 93, 0.75), 
+      rgba(28, 36, 45, 0.8)
+    ),
+     
+    url(images/wave2.jpg);
+}
+
+form {
+  text-align: center;
+  margin-top: 60px;
+}
+
+input {
+  background-color: white;
+  border-style: none;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  width: 75%;
+  border-radius: 4px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #1c242d;
+  letter-spacing: .1em;
+}
+
+button {
+  text-align: center;
+  background-color: #3c6d96;
+  border-style: none;
+  padding: 20px 30px;
+  width: 45%;
+  color: white;
+  font-family: 'Cabin', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 25px;
+}
+
+button:hover{
+  background-color: #4bbe90;
+  transition: background-color 0.4s ease-in;
+}
+
+.resize {
+  width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*What are the steps to get a div, and set its background image?*/
+/*make a document after this showing how*/

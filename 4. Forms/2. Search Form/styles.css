@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+h1 {
+  font-size: 72px;
+/*  background: -webkit-linear-gradient(left,red,orange,yellow,green,blue,indigo,violet);*/
+  background: -webkit-linear-gradient(left, #6af0e2, #543df4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+#main-container {
+    background-color: #353a45;
+    padding: 40px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 25px;
+    position: relative;
+}
+
+body {
+  background: -webkit-linear-gradient(left, #586aef , #69efe1); /* For Safari 5.1 to 6.0 */
+}
+
+.lead {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+#circle {
+  width: 130px;
+  height:130px;
+  background: -webkit-linear-gradient(42deg, #6af0e2, #543df4);
+  border-radius: 50%;
+  position: absolute;
+/*  bottom: 250px;
+  left: 255px;*/
+  bottom: 75%;
+  left: 40%;
+}
+
+#circle:after{
+  content: "";
+  position: absolute;
+  border: solid 3px white;
+  border-radius: 100%;
+  width: 115px;
+  height: 115px;
+  left: 5px;
+  top: 5px;
+}
+
+.circle-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+  left: 43px;
+  bottom: -35px;
+  font-family: 'Lato', sans-serif;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  padding: 6px;
+  width: 33%;
+  border-style: none;
+  border-radius: 5px;
+}
+
+select {
+  width: 33%;
+  border-style: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-family:'Merriweather', serif;
+  font-weight: 100;
+}
+
+button {
+  width: 32%;
+  border-style: none;
+  padding: 6px;
+  font-weight: bold;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #543df4;
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+

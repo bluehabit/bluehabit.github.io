@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sushi Store</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id='main'>
+		<div id='my-cart' class='white-border'>
+			<h2>MY CART: <span class='orange'>4 Items</span></h2>
+			<h2>total cost: <span class='orange'> $24.49</span></h2>
+			<h2>promo code:</h2>
+			<input type='text' placeholder='I<3Sushi' class='promo'>
+		</div>
+
+		<div id='shopping-items' class='clear'>
+
+			<div class='item'>
+				<img src='images/california.png' width='150px' height='100'>
+				<h3>California Roll</h3>
+				<p class='description'>Crab meat, avocado and cucumber</p>
+				<p class='item-number'>Quantity: 6</p>
+				<p class='cost'>$5.50</p>
+				<div class='pink-bar group'>
+					<button class='addbutton'>+</button>
+					<button class='subtractbutton'>-</button>
+					<input class='total-display' type='text' value='1'>
+				</div>	
+			</div>
+
+			<div class='item'>
+				<img src='images/shrimp.png' width='150px' height='100'>
+				<h3>Shrimp Roll</h3>
+				<p class='description'>Boiled shrimp with seaweed outside</p>
+				<p class='item-number'>Quantity: 6</p>
+				<p class='cost'>$5.99</p>
+				<div class='pink-bar group'>
+					<button class='addbutton'>+</button>
+					<button class='subtractbutton'>-</button>
+					<input class='total-display' type='text' value='1'>
+				</div>	
+			</div>
+
+			<div class='item'>
+				<img src='images/salmon.png' width='150px' height='100'>
+				<h3>Salmon Roll</h3>
+				<p class='description'>Raw high quality salmon w/ seaweed outside</p>
+				<p class='item-number'>Quantity: 6</p>
+				<p class='cost'>$5.50</p>
+				<div class='pink-bar group'>
+					<button class='addbutton'>+</button>
+					<button class='subtractbutton'>-</button>
+					<input class='total-display' type='text' value='1'>
+				</div>	
+			</div>
+
+			<div class='item'>
+				<img src='images/tuna.png' width='150px' height='100'>
+				<h3>Spicy Tuna Roll</h3>
+				<p class='description'>Raw delicious spicy tuna and cucumber</p>
+				<p class='item-number'>Quantity: 6</p>
+				<p class='cost'>$7.50</p>
+				<div class='pink-bar group'>
+					<button class='addbutton'>+</button>
+					<button class='subtractbutton'>-</button>
+					<input class='total-display' type='text' value='1'>
+				</div>	
+			</div>
+		</div><!--end shopping-items-->
+
+		<div class='clear' id='bottom-buttons'>
+			<button class='white-border' id='keep-shopping'>Keep Shopping</button>
+			<button class='white-border' type='submit' id='checkout'>Checkout</button>
+		</div>
+
+	</div><!--end main-->
+
+	<a href='../1. Multi Page Website/index.html'>Home</a>
+</body>
+
+</html>

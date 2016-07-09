@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+label {
+  display: block;
+  font-family: 'Average', serif;
+  font-size: 1.2em;
+}
+
+input {
+  padding: 12px;
+  width: 55%;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Average', serif;
+}
+
+#main {
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 54px -8px rgba(0,0,0,0.39);
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  width: 55%;
+  border-style: none;
+  border-radius: 3px;
+  color: white;
+  background-color: #0493bb;
+  font-size: 1.5em;
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, .65);
+  padding: 30px;
+  text-align: center;
+  margin-top: 55px;
+  border-radius: 15px;
+}
+
+html {
+  background-color: #00aad9;
+}

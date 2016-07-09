@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+html {
+  background: url(images/pebbles.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+#main {
+  width: 50%;
+  background-color: rgba(255, 255, 255, .55);
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: .05em;
+}
+
+.addmargin {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  border-style: none;
+  padding: 15px;
+}
+
+button {
+  width: 90%;
+  border-radius: 5px;
+  background-color: #55709c;
+  margin-top: 220px;
+  font-size: 3.5em;
+  letter-spacing: .05em;
+}
