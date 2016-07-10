@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div id='main'>
+		<form>
+
+			<h1>Payment Information</h1>
+
+			<div id='cards'>
+				<img src="images/mc.png" alt='mastercard' class='pgrey'>
+				<img src='images/visa.png' alt='visa' class='pgrey'>
+				<img src='images/discover.png' alt='discover' class='pgrey'>
+				<img src='images/amex.png' alt='amex' class='pgrey'>
+			</div>
+
+			<label for='customername'>Full Name</label>
+			<input type='name' id='customername' name='customername' class='input'>
+
+			<label for='cnumber'>Card Number</label>
+			<input type='number' max='19' name='cardnumber' id='cnumber' class='input'>
+
+			<label for='expiration'>Expiration Date</label>
+			<input type='date' name='expiration' id='expiration' class='input'>
+
+			<label for='cvs'>CVS</label>
+			<input type='number' max='3' name='cvs' id='cvs' class='input'>
+
+			<button type='submit'>Submit Payment</button>
+
+		</form>
+	</div>
+	<a href='../index.html'>Home</a>
+</body>
+
+</html>

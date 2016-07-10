@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+label {
+  color: #00a6ea;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+h1 {
+  color: #333333;
+}
+
+h1, label, button {
+  font-family: 'Cabin', sans-serif;
+}
+
+#main {
+  background-color: white;
+  width: 50%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#cards {
+  text-align: center;
+  background-color: #00a6ea;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+#cards img{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+label, input, button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input {
+  width: 60%;
+  padding: 8px;
+  border-radius: 3px;
+  border-style: none;
+  background-color: #e6e6e6;
+  margin-bottom: 25px;
+}
+
+button {
+  margin-top: 10px;
+  border-style: none;
+  background-color: #e39c14;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+html {
+  background-color: #f2f2f2;
+}
+
+.pgrey {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.pgrey:hover {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+}
