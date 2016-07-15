@@ -1,0 +1,48 @@
+/*Style the classes button-sm, button-md, and button-lg to represent buttons of different sizes.
+Your .button class should have the property and value display: inline-block;.*/
+
+.button {
+  color: #262627; 
+  font-family: 'Merriweather', serif;  
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #0087ed; 
+  box-sizing: border-box;
+  padding: 10px 10px;
+  border: 8px solid #06cbfc;
+  border-style: outset;
+  width: 50%;
+  margin: 20px auto;
+  display:inline-block;
+  width: 20%;
+}
+
+.button-sm {
+	width: 15%;
+	font-size: 1em;
+}
+
+.button-md {
+	width: 25%;
+	padding: 30px 30px;
+	font-size: 1.3em;
+}
+
+.button-lg {
+	width: 40%;
+	padding: 50px 50px;
+	font-size: 2.2em;
+}
+
+.button:hover{
+	color: white;
+	transition: color 0.4s ease-in;
+}
+
+.button:active{
+	color: #262627;
+	transition: color .25s ease-out;
+}
