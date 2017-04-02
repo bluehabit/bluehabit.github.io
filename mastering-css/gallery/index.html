@@ -1,0 +1,102 @@
+
+
+<div class="container">
+
+	  <input type="radio" name="gallery" id='image1' checked='checked'>
+	  <label for='image1'>
+	  	  <img class='small-image' src="http://imgur.com/jRV6Tny.jpg">
+	  </label>
+
+	  <input type="radio" name="gallery" id='image2'>
+	  <label for='image2'>
+	  	   <img class='small-image' src="http://imgur.com/1ZngnOp.jpg">
+	  </label>
+
+	  <input type="radio" name="gallery" id='image3'>
+	  <label for='image3'>
+	  	   <img class='small-image' src="http://imgur.com/WvXzb5Q.jpg">
+	  </label>
+
+	  <input type="radio" name="gallery" id='image4'>
+	  <label for='image4'>
+	  	   <img class='small-image' src="http://imgur.com/zjWGgAa.jpg">
+	  </label>
+
+  
+	  <input type="radio" name="gallery" id='image5'>
+	  <label for='image5'>
+	  	    <img class='small-image' src="http://imgur.com/p10Qn3d.jpg">
+	  </label>
+
+		<div class='content'>
+			<div id='image-content1'>
+				<img src="http://imgur.com/jRV6Tny.jpg">
+			</div>
+
+			<div id='image-content2'>
+				<img src="http://imgur.com/1ZngnOp.jpg">
+			</div>
+
+			<div id='image-content3'>
+				<img src="http://imgur.com/WvXzb5Q.jpg">
+			</div>
+
+			<div id='image-content4'>
+				<img src="http://imgur.com/zjWGgAa.jpg">
+			</div>
+
+			<div id='image-content5'>
+				<img src="http://imgur.com/p10Qn3d.jpg">
+			</div>
+		
+		</div> <!--content-->
+
+  </div><!--container-->
+
+
+
+<style>
+
+	.container {
+		width: 50%;
+		margin: 0 auto;
+		margin-top: 10%;
+	}
+
+	input:checked + label > img{
+		border: none;
+		border: 3px solid #ef2d7a;
+
+	}
+
+	input + label > img {
+		border: 4px solid #828182;
+	}
+
+	.container img.small-image {
+		width: 71px;
+		height: 71px;
+	}
+
+	.content > div img {
+		display: none;
+		transition: all .2s ease;
+	}
+
+	#image1:checked ~ .content #image-content1 img,
+	#image2:checked ~ .content #image-content2 img,
+	#image3:checked ~ .content #image-content3 img,
+	#image4:checked ~ .content #image-content4 img,
+	#image5:checked ~ .content #image-content5 img{
+		display: block;
+		height: 500px;
+		width: 410px;
+	}
+
+	input {
+		display: none;
+	}
+}
+
+</style>
+
