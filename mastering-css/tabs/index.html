@@ -1,0 +1,80 @@
+<div class='tabComponent'>
+	<input type="radio" name="tabs" id='furniture' checked='checked'>
+	<label for='furniture'>Furniture</label>
+
+	<input type="radio" name="tabs" id='homedecor'>
+	<label for='homedecor'>Home Decor</label>
+
+	<input type="radio" name="tabs" id='kitchen'>
+	<label for='kitchen'>Kitchen</label>
+
+	<input type="radio" name="tabs" id='clearance'>
+	<label for='clearance'>Clearance</label>
+
+	<div class='content'>
+		<div id='furniture-content'>
+			<p>Browse through our list of Home Decor Items</p>
+		</div>
+
+		<div id='homedecor-content'>
+			<p>Flash Sale on Living Room and Bedroom Furniture</p>
+		</div>
+
+		<div id='kitchen-content'>
+			<p>Bring the best out of the masterchef in you</p>
+		</div>
+
+		<div id='clearance-content'>
+			<p>Red hot deals at affordable prices. Check out our clearance section for more details.
+			</p>
+		</div>
+	</div>
+</div>
+
+<style>
+
+.tabComponent {
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 20%;
+	user-select: none;
+}
+
+label {
+	margin-left: 20px;
+	background-color: #e8e3e5;
+	color: white;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+input:checked + label {
+	color: white;
+	background-color: #bc5d83;
+	border-bottom: 3px solid #e91a6c;
+}
+
+.content > div {
+	/*display: none;*/
+	visibility: hidden;
+}
+
+#furniture:checked ~ .content #furniture-content, 
+#kitchen:checked ~ .content #kitchen-content,
+#homedecor:checked ~ .content #homedecor-content,
+#clearance:checked ~ .content #clearance-content {
+	font-size: 1.25em;
+	/*display: block;*/
+	visibility: visible;
+	color: black;
+	margin-top: 45px;
+	margin-left: 20px;
+}
+
+input[type='radio']{
+	display: none;
+}
+
+
+
+</style>
