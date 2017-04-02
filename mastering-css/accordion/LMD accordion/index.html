@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Practice</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+
+<div class='main'>
+
+
+<div class='container'>
+    <input type="radio" name="accordion" id='header1'> 
+    <label for='header1' class='expand'>APPETIZERS</label>
+	<div class='content group'>
+	<h4>Check out our tasty apps!</h4>
+	<p><strong>Happy hour menu - half off!!</strong></p>
+    <p>Chickin Wings (6) - 5.99$</p>
+    <p>Calamari - 7.99$</p>
+    <p>Garlic breaded pickles - 4.59$</p>
+    </div>
+</div>
+
+<div class='container'>
+    <input type="radio" name="accordion" id='header2'>
+    <label for='header2' class='expand'>ENTREES</label>
+    <div class='content group'>
+    <h4>Choose from a wide range of pastas, combos and signature dishes</h4>
+    <p><strong>Pastas</strong></p>
+    <p>Chicken PIcatta - 14.99$</p>
+    <p>Chicken Pollo - 12.99$</p>
+    <p>Lasagna (chicken/beef) - 10.99$</p>
+
+    <p><strong>Combos</strong></p>
+    <p>Italian Sausage &amp; Beef Combo - 15.99$</p>
+    <p>Mac n Cheese with Chicken Tenders - 8.99$</p>
+    </div>
+</div>
+
+<div class='container'>
+    <input type="radio" name="accordion" id='header3'>
+    <label for='header3' class='expand'>DESSERTS</label>
+    <div class='content group'>
+    <h4>New Summer Specials!!</h4>
+    <p><strong>Shakes and Ice Creams</strong></p>
+    <p>Turtle Caramel Shake - 6.99$</p>
+    <p>Chocolate Bronwie Bite - 4.99$</p>
+    </div>
+</div>
+
+<div class='container'>
+    <input type="radio" name="accordion" id='header4'>
+    <label for='header4' class='expand'>SOUPTS &amp; SALADS</label>
+    <div class='content group'>
+    <h4>Yummy Soups</h4>
+    <p>Tomatoe Soup - 5.99$</p>
+    <p>Clam Chowder - 8.99$</p>
+    <p>Chicken Noodle - 4.99$</p>
+    </div>
+</div>
+
+
+
+</div><!--end main-->
+
+</body>
+</html>
+
+<style>
+body {
+   font-family: 'Karla', sans-serif;
+}
+.container {
+    margin-bottom: 2px;
+}
+img {
+/*    visibility: hidden;*/
+    border-radius: 15px;
+    float: left;
+    padding: 7px;
+}
+.main {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.expand {
+    background-color: #212121;
+    padding: 15px;
+    padding-bottom: 32px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+}
+.content {
+    padding: 15px;
+    border: 1px solid black;
+    border-top: 5px solid #f12268;
+    color: white;
+    font-style: italic;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    padding-top: 35px;
+}
+label {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.15em;
+    position: relative;
+}
+label:after {
+    content: url('images/angle.png');
+    float: right;
+}
+
+input:checked + label {
+    color: white;
+    transition: all .25s ease-in;
+}
+/*highlights section headers white*/
+input:checked + label + div {
+    color: black;
+    transition: color 1s ease-in-out;
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 320px;
+    transition: height .5s ease;
+}
+
+/*makes section paragraph contents visible*/
+input[type=radio] {
+    display: none;
+}
+/*hides radio buttons*/ 
+.group {
+  clear: both;
+}
+/*///////////////////////////////////
+////=Media Queries
+////////////////////////////////////*/
+@media only screen and (max-width : 1210px){
+  .main{
+    width: 55%;   
+}
+input:checked + label + div {
+    color: black;
+    transition: color 1s ease-in-out;
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 320px;
+    transition: height .5s ease;
+}
+@media only screen and (max-width : 830px){
+  .main{
+    width: 100%;
+}
+input:checked + label + div {
+    color: black;
+    transition: color 1s ease-in-out;
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 320px;
+    transition: height .5s ease;
+}
+</style>
