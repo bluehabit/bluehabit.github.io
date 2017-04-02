@@ -1,0 +1,195 @@
+<body>
+  <label>
+    <input type="checkbox"/>
+    <div id="card">
+      <div class="front">
+        <h2>
+          Chris Feltus
+        </h2>
+        <h3>
+          Front End Developer
+        </h3>
+        
+        <p class='body-text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco</p>
+
+        <p>
+        Learning Web Development with <a href="#">Modern Developer</a>
+
+     
+        <ul class='socialBlock'>
+            <li class='social'>
+                <a href="https://github.com/bluehabit"> <img src="http://imgur.com/kCdVime.png"></a>
+            </li>
+             <li class='social'>
+                <a href="https://twitter.com/FeltusRE"><img src="http://imgur.com/Frh7qpl.png"></a>
+            </li>
+
+            <li class='encyclopedia'>
+                <img src="http://imgur.com/h48AOEy.png">
+                <a href="#">On Encyclopedia</a>
+            </li>
+        </ul>
+        
+          
+        </p>
+      </div>
+      <div class="back">
+        <p class='name'>
+          Chris Feltus
+        </p>
+      </div>
+    </div>
+  </label>
+
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Karla" rel="stylesheet);
+
+body {
+  background: white;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+input {
+  display: none;
+}
+
+label {
+
+  width: 609px;
+  height: 323px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  cursor: pointer;
+  display: block;
+  
+  perspective: 1000px;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+h2 {
+    font-size: 2.65em;
+}
+
+h3 {
+    margin-left: 5px;
+    margin-top: -30px;
+    font-weight: 100;
+}
+
+.social  {
+    float: right;
+    margin-left: 5px;
+    list-style: none;
+}
+
+.encylopedia {
+    float: left;
+}
+
+.socialBlock {
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.name {
+    color: purple;
+    font-weight: bold;
+    background-color: rgba(236, 236, 236, .5);
+    width: 15%;
+    padding: 5px;
+    margin-left: 5px;
+    position: relative;
+    top: 265px;
+}
+
+/*ul.social {
+    margin-right: 25px;
+}*/
+
+#card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+#card div {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#card .front {
+  background-color: white;
+  background: url(http://imgur.com/m0T8z2z.png);
+  padding: 15px;
+}
+
+#card .back {
+  background: black;
+  background: url(http://imgur.com/OPnxmmD.png);
+  color: white;
+  height: 100%;
+  width: 100%;
+  transform: rotateX(180deg);
+}
+
+.front, .back {
+    border: 2px solid white;
+}
+
+p {
+  padding: 0 15px;
+}
+
+#location {
+  font-style: italic;
+}
+
+
+a:visited, a {
+  color: #ed2776;
+  text-decoration: none;
+}
+
+.body-text {
+    margin-top: 35px;
+}
+
+label:hover #card {
+  transform: rotateX(20deg);
+}
+
+label  #card .front {
+   box-shadow: 0px 6px 25px -1px rgba(31,31,31,0.51);
+}
+
+
+
+label #card .back {
+    box-shadow: 0px 6px 25px -1px rgba(31,31,31,0.51);
+}
+
+label input:checked + #card {
+  box-shadow: Xpx Ypx Zpx rgba(r,g,b,a);
+  transform: rotateX(180deg);
+}
+
+label:hover input:checked + #card {
+  transform: rotateX(160deg);
+}
+</style>
