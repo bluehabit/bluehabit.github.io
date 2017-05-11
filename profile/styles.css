@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+nav {
+	background-color: #1d1d1d;
+	padding: 35px;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+	margin-left: 2.5em;
+	color: #e3e3e3;
+}
+
+nav input[type='search'] {
+	margin-right: 15px;
+	width: 85%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.fRight {
+	float: right;
+}
+
+.authorItem {
+	font-size: 1.3em;
+	transition: all .4s ease;
+}
+
+.authorItem:hover {
+	color: white;
+}
+
+.imgBorder {
+    border-width:5px;  
+    border-style:double;
+    color: #3d3d3d;
+}
+
+.profilePic {
+	border-radius: 50%;
+	border: 2px solid #e8217f;
+	width: 15%;
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:selected{
+	color: red;
+}
+
+a:visited{
+	color: white;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
