@@ -53,9 +53,54 @@ img {
 	display: inline-block;
 }
 
-a {
-	text-decoration: none;
+.front-back-bar {
+    width: 75%;
+    display: inline-block;
+    color: white;
+    margin-left: 115px;
 }
+
+.front-bar {
+    width: 70%;
+    background-color: #e8217f;
+    float: left;
+    height: 25px;
+    text-align: center;
+}
+
+.back-bar {
+    width: 30%;
+    background-color: #3d3d3d;
+    float: right;
+    height: 25px;
+    text-align: center;
+}
+
+.front-chart{
+    padding: 15px;
+    background-color: #d1d1d1;
+    width: 50%;
+    height: 325px;
+    float: left;
+}
+
+.back-chart{
+    padding: 15px;
+    background-color: #424242;
+    width: 50%;
+    height: 325px;
+    float: right;
+}
+
+
+.inner-bar {
+    background-color: #e8217f;
+    width: 20%;
+    height: 32px;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px;
+}
+
 
 a:selected{
 	color: red;
@@ -64,6 +109,8 @@ a:selected{
 a:visited{
 	color: white;
 }
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
