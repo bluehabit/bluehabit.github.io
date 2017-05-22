@@ -1,0 +1,143 @@
+<div class='chart group'>
+	<ul class='rating'>
+		<li>Expert</li>
+		<li>Proficient</li>
+		<li>Competent</li>
+		<li>Learning</li>
+	</ul>
+
+	<ul class='subject'>
+		<li>
+			<div class='bar'></div>
+			<span>Javascript</span>
+		</li>
+
+		<li>
+			<div class='bar'></div>
+			<span>HTML/CSS</span>
+		</li>
+
+		<li>
+			<div class='bar'></div>
+			<span>ReactJS</span>
+		</li>
+
+		<li>
+			<div class='bar'></div>
+			<span>jQuery</span>
+		</li>
+	</ul>
+</div>
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+
+	.chart {
+		width: 550px;
+		height: 310px;
+		background-color: #333333;
+		border: 2px solid grey;
+		margin: 0 auto;
+		width: 50%;
+		opacity: .9;
+	}
+
+	.group:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.chart ul li {
+		list-style: none;
+	}
+
+	.subject, .rating {
+		color: #333333;
+		font-size: 1.05em;
+		font-family: 'Lato', sans-serif;
+		display: inline-block;
+		position: relative;
+	}
+
+	.subject li {
+		display: inline-block;
+		margin-left: 38px;
+	}
+
+	.rating {
+		width: 116%;
+	}
+
+	.rating li {		
+		height: 62px;
+		border-bottom: 1px solid grey;
+		margin-bottom: 13px;
+	}
+
+	.rating li:last-child {
+		border-bottom: none;
+	}
+
+	.rating {
+		right: 135px;
+		/*right: 39px/;*/
+	}
+
+	.subject {
+		bottom: 25px;
+	}
+
+	ul.subject {
+		width: 100%;
+		margin-right: 350px;
+	}
+
+	.bar {
+		background-color: #eb1584;
+		width: 50px;
+		/*width: 10%;*/
+		height: 78px;
+		bottom: 40px;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.bar:hover{
+		background-color: #fe4ca8;
+	}
+
+
+	@media only screen and (max-width : 1024px){
+
+	}
+
+	@media only screen and (max-width : 600px){
+	
+	}
+
+	@media only screen and (max-width : 300px){
+		
+	}
+	
+</style>
+
+<script>
+/*put this in a codepen or something to showcase this code*/
+	var items = document.querySelectorAll('ul.subject li > div');
+
+	//example 1
+	// items.addEventListener('click', function(){
+	// 	console.log(this)
+	// 	console.log(this.classList)
+	// 	this.style.height = '250px';
+	// })
+
+	//example 2
+	items.forEach(function(item){
+		item.addEventListener('click', function(e){
+			this.style.height = '250px';
+			console.log(e.currentTarget);
+	})
+</script>
