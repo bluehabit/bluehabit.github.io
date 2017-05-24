@@ -29,9 +29,10 @@
 	</ul>
 </div>
 
-
 <style>
-	@import url('https://fonts.googleapis.com/css?family=Lato');
+
+	/*working pen*/
+	/*https://codepen.io/bluehabit/pen/ybZZJX*/
 
 	.chart {
 		width: 550px;
@@ -53,17 +54,37 @@
 		list-style: none;
 	}
 
-	.subject, .rating {
+	.subject {
+		bottom: 25px;
+		display: flex;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		position: relative;
 		color: #333333;
 		font-size: 1.05em;
 		font-family: 'Lato', sans-serif;
-		display: inline-block;
+		bottom: -5px;
+/*
+		display: inline-block;*/
+		/*old code*/
+	}
+
+	.rating {
+		color: #333333;
+		font-size: 1.05em;
+		font-family: 'Lato', sans-serif;
 		position: relative;
 	}
 
 	.subject li {
-		display: inline-block;
-		margin-left: 38px;
+		display: flex;
+  		justify-content: center;
+		width: 25%;
+
+	/*	display: inline-block;
+		margin-left: 38px;*/
+		/*-old code*/
 	}
 
 	.rating {
@@ -85,19 +106,9 @@
 		/*right: 39px/;*/
 	}
 
-	.subject {
-		bottom: 25px;
-	}
-
-	ul.subject {
-		width: 100%;
-		margin-right: 350px;
-	}
-
 	.bar {
 		background-color: #eb1584;
-		width: 50px;
-		/*width: 10%;*/
+		width: 10%;
 		height: 78px;
 		bottom: 40px;
 		position: absolute;
@@ -108,36 +119,23 @@
 		background-color: #fe4ca8;
 	}
 
-
 	@media only screen and (max-width : 1024px){
+		/*standard break point*/
+	}
 
+	@media only screen and (max-width : 700px){
+		.subject span {
+			transform: rotate(90deg);
+			position: relative;
+			top: 15px;
+		}
 	}
 
 	@media only screen and (max-width : 600px){
-	
+		/*standard break point*/
 	}
 
 	@media only screen and (max-width : 300px){
-		
+		/*standard break point*/
 	}
-	
 </style>
-
-<script>
-/*put this in a codepen or something to showcase this code*/
-	var items = document.querySelectorAll('ul.subject li > div');
-
-	//example 1
-	// items.addEventListener('click', function(){
-	// 	console.log(this)
-	// 	console.log(this.classList)
-	// 	this.style.height = '250px';
-	// })
-
-	//example 2
-	items.forEach(function(item){
-		item.addEventListener('click', function(e){
-			this.style.height = '250px';
-			console.log(e.currentTarget);
-	})
-</script>
