@@ -1,47 +1,91 @@
-<div class='chart group'>
-	<ul class='rating'>
-		<li>Expert</li>
-		<li>Proficient</li>
-		<li>Competent</li>
-		<li>Learning</li>
-	</ul>
+<div class='graph-container'>
+	<div class='chart group'>
+		<ul class='rating'>
+			<li>Expert</li>
+			<li>Proficient</li>
+			<li>Competent</li>
+			<li>Learning</li>
+		</ul>
 
-	<ul class='subject'>
-		<li>
-			<div class='bar'></div>
-			<span>Javascript</span>
-		</li>
+		<ul class='subject'>
+			<li>
+				<div class='bar'></div>
+				<span>Javascript</span>
+			</li>
 
-		<li>
-			<div class='bar'></div>
-			<span>HTML/CSS</span>
-		</li>
+			<li>
+				<div class='bar'></div>
+				<span>HTML/CSS</span>
+			</li>
 
-		<li>
-			<div class='bar'></div>
-			<span>ReactJS</span>
-		</li>
+			<li>
+				<div class='bar'></div>
+				<span>ReactJS</span>
+			</li>
 
-		<li>
-			<div class='bar'></div>
-			<span>jQuery</span>
-		</li>
-	</ul>
+			<li>
+				<div class='bar'></div>
+				<span>jQuery</span>
+			</li>
+		</ul>
+	</div>
+
+	<div class='chart group'>
+		<ul class='rating'>
+			<li>Expert</li>
+			<li>Proficient</li>
+			<li>Competent</li>
+			<li>Learning</li>
+		</ul>
+
+		<ul class='subject'>
+			<li>
+				<div class='bar'></div>
+				<span>Javascript</span>
+			</li>
+
+			<li>
+				<div class='bar'></div>
+				<span>HTML/CSS</span>
+			</li>
+
+			<li>
+				<div class='bar'></div>
+				<span>ReactJS</span>
+			</li>
+
+			<li>
+				<div class='bar'></div>
+				<span>jQuery</span>
+			</li>
+		</ul>
+	</div>
 </div>
+
 
 <style>
 
 	/*working pen*/
 	/*https://codepen.io/bluehabit/pen/ybZZJX*/
 
+	* {
+		box-sizing: border-box;
+	}
+
+	.graph-container {
+		width: 100%;
+	}
+
 	.chart {
-		width: 550px;
+		/*width: 550px;*/
 		height: 310px;
 		background-color: #333333;
 		border: 2px solid grey;
 		margin: 0 auto;
-		width: 50%;
+		width: 35%;
 		opacity: .9;
+		float: left;
+		margin-left: 12%;
 	}
 
 	.group:after {
