@@ -1,3 +1,8 @@
+<div class='percent-breakdown group'>
+	<span class='pink'>70%</span>
+	<span class='grey'>30%</span>
+</div>
+
 <div class='graph-container'>
 	<div class='chart group'>
 		<ul class='rating'>
@@ -9,22 +14,22 @@
 
 		<ul class='subject'>
 			<li>
-				<div class='bar'></div>
+				<div class='bar' data-protip='I love JS!'></div>
 				<span>Javascript</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
+				<div class='bar' data-protip='CSS is annoying'></div>
 				<span>HTML/CSS</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
+				<div class='bar' data-protip='Learning this'></div>
 				<span>ReactJS</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
+				<div class='bar' data-protip='I prefer vanilla js'></div>
 				<span>jQuery</span>
 			</li>
 		</ul>
@@ -40,23 +45,23 @@
 
 		<ul class='subject'>
 			<li>
-				<div class='bar'></div>
-				<span>Javascript</span>
+				<div class='bar' data-protip='learning it'></div>
+				<span>NodeJS</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
-				<span>HTML/CSS</span>
+				<div class='bar' data-protip='cool DB'></div>
+				<span>MongoDB</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
-				<span>ReactJS</span>
+				<div class='bar' data-protip='relational DB learning'></div>
+				<span>MySQL</span>
 			</li>
 
 			<li>
-				<div class='bar'></div>
-				<span>jQuery</span>
+				<div class='bar' data-protip='more relational DB'></div>
+				<span>PostgressQL</span>
 			</li>
 		</ul>
 	</div>
@@ -75,6 +80,36 @@
 	.graph-container {
 		width: 100%;
 	}
+
+	/*first graph - front end*/
+	/*makes 2nd graph have purple bars*/
+	.graph-container > .chart:nth-child(2) .bar {
+		background-color: #8555cf;
+	}
+
+	/*targeting individual bars*/
+	.graph-container > .chart:nth-child(1) .subject li:nth-child(1) .bar {
+		height: 227px;
+	}
+
+	.graph-container > .chart:nth-child(1) .subject li:nth-child(2) .bar {
+		height: 227px;
+	}
+
+	.graph-container > .chart:nth-child(1) .subject li:last-child .bar {
+		height: 152px;
+	}
+
+	/*second graph - back end*/
+	/*targeting individual bars*/
+	.graph-container > .chart:nth-child(2) .subject li:nth-child(1) .bar {
+		height: 152px;
+	}
+
+	.graph-container > .chart:nth-child(2) .subject li:nth-child(2) .bar {
+		height: 152px;
+	}
+
 
 	.chart {
 		/*width: 550px;*/
@@ -132,7 +167,7 @@
 	}
 
 	.rating {
-		width: 116%;
+		width: 132%;
 	}
 
 	.rating li {		
@@ -147,7 +182,28 @@
 
 	.rating {
 		right: 135px;
-		/*right: 39px/;*/
+	}
+
+	.percent-breakdown span {
+		padding: 8px;
+		color: white;
+		font-weight: 600;
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	.percent-breakdown span.pink{
+		background-color: #eb1584;
+		width: 70%;
+		float: left;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.percent-breakdown span.grey{
+		background-color: #3c3c3c;
+		width: 30%;
+		float: left;
+		border-radius: 0 5px 5px 0;
 	}
 
 	.bar {
@@ -163,23 +219,81 @@
 		background-color: #fe4ca8;
 	}
 
+	.bar:hover:after{
+		content: attr(data-protip);
+		background-color: #131313;
+		color: white;
+		display: block;
+		position: relative;
+		width: 115px;
+		padding: 5px;
+		z-index: 10;
+		font-size: 14px;
+		border-radius: 5px;
+		text-align: center;
+		margin-left: -32px;
+		animation: levitate 500ms ease 1;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes levitate {
+		0%{
+			margin-top: 0px;
+			opacity: .2;
+		}
+		100%{
+			margin-top: -35px;
+			opacity: 1;
+		}
+	}
+
+	.bar:hover:before{
+		background-color: red;
+		padding: 5px;
+		position: relative;
+		width: 15px;
+	}
+
+	.graph-container > .chart:nth-child(2) .subject li div.bar:hover {
+		background-color: #a174e7;
+	}
+
 	@media only screen and (max-width : 1024px){
 		/*standard break point*/
 	}
 
-	@media only screen and (max-width : 700px){
+	@media only screen and (max-width : 900px){
 		.subject span {
 			transform: rotate(90deg);
 			position: relative;
-			top: 15px;
+			top: 25px;
+		}
+
+		.chart {
+			float: none;
+			width: 50%;
+			margin: 0 auto;
+			margin-top: 15%;
+		}
+
+		.rating {
+			width: 132%;
 		}
 	}
 
-	@media only screen and (max-width : 600px){
-		/*standard break point*/
+	@media only screen and (max-width : 650px){
+		.chart {
+			margin-top: 35%;
+		}
+
+		.rating {
+			width: 145%;
+		}
 	}
 
-	@media only screen and (max-width : 300px){
-		/*standard break point*/
+	@media only screen and (max-width : 360px){
+		.rating {
+			width: 185%;
+		}
 	}
 </style>
