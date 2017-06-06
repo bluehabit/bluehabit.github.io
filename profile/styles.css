@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -20,15 +22,18 @@ nav li {
 
 nav input[type='search'] {
 	margin-right: 15px;
-	width: 85%;
+	width: 100%;
 }
 
 img {
 	max-width: 100%;
 }
 
-.fRight {
+.searchInput {
 	float: right;
+    color: white;
+    display: inline-block;
+    padding: 5px;
 }
 
 .authorItem {
@@ -53,55 +58,6 @@ img {
 	display: inline-block;
 }
 
-.front-back-bar {
-    width: 75%;
-    display: inline-block;
-    color: white;
-    margin-left: 115px;
-}
-
-.front-bar {
-    width: 70%;
-    background-color: #e8217f;
-    float: left;
-    height: 25px;
-    text-align: center;
-}
-
-.back-bar {
-    width: 30%;
-    background-color: #3d3d3d;
-    float: right;
-    height: 25px;
-    text-align: center;
-}
-
-.front-chart{
-    padding: 15px;
-    background-color: #d1d1d1;
-    width: 50%;
-    height: 325px;
-    float: left;
-}
-
-.back-chart{
-    padding: 15px;
-    background-color: #424242;
-    width: 50%;
-    height: 325px;
-    float: right;
-}
-
-
-.inner-bar {
-    background-color: #e8217f;
-    width: 20%;
-    height: 32px;
-    border-radius: 0px 5px 5px 0px;
-    padding: 10px;
-}
-
-
 a:selected{
 	color: red;
 }
@@ -110,7 +66,228 @@ a:visited{
 	color: white;
 }
 
+/*Styles the skills graph on site*/
+
+.graph-container {
+        width: 100%;
+}
+
+/*first graph - front end*/
+/*makes 2nd graph have purple bars*/
+.graph-container > .chart:nth-child(2) .bar {
+    background-color: #8555cf;
+}
+
+.graph-container > .chart:nth-child(2) {
+    margin-bottom: 105px;
+}
+
+/*targeting individual bars*/
+.graph-container > .chart:nth-child(1) .subject li:nth-child(1) .bar {
+    height: 227px;
+}
+
+.graph-container > .chart:nth-child(1) .subject li:nth-child(2) .bar {
+    height: 227px;
+}
+
+.graph-container > .chart:nth-child(1) .subject li:last-child .bar {
+    height: 152px;
+}
+
+/*second graph - back end*/
+/*targeting individual bars*/
+.graph-container > .chart:nth-child(2) .subject li:nth-child(1) .bar {
+    height: 152px;
+}
+
+.graph-container > .chart:nth-child(2) .subject li:nth-child(2) .bar {
+    height: 152px;
+}
 
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
+.chart {
+    /*width: 550px;*/
+    height: 310px;
+    background-color: #333333;
+    border: 2px solid grey;
+    margin: 0 auto;
+    width: 35%;
+    opacity: .9;
+    float: left;
+    margin-left: 12%;
+}
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.chart ul li {
+    list-style: none;
+}
+
+.subject {
+    bottom: 25px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #333333;
+    font-size: 1.05em;
+    font-family: 'Lato', sans-serif;
+    bottom: -5px;
+/*
+    display: inline-block;*/
+    /*old code*/
+}
+
+.rating {
+    color: #333333;
+    font-size: 1.05em;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.subject li {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+
+/*  display: inline-block;
+    margin-left: 38px;*/
+    /*-old code*/
+}
+
+.rating {
+    width: 125%;
+}
+
+.rating li {        
+    height: 62px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 13px;
+}
+
+.rating li:last-child {
+    border-bottom: none;
+}
+
+.rating {
+    right: 135px;
+}
+
+.percent-breakdown span {
+    padding: 8px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.percent-breakdown span.pink{
+    background-color: #eb1584;
+    width: 70%;
+    float: left;
+    border-radius: 5px 0 0 5px;
+}
+
+.percent-breakdown span.purple{
+    background-color: #9166d4;
+    width: 30%;
+    float: left;
+    border-radius: 0 5px 5px 0;
+}
+
+.bar {
+    background-color: #eb1584;
+    width: 10%;
+    height: 78px;
+    bottom: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background-color: #fe4ca8;
+}
+
+.bar:hover:after{
+    content: attr(data-protip);
+    background-color: #131313;
+    color: white;
+    display: block;
+    position: relative;
+    width: 115px;
+    padding: 5px;
+    z-index: 10;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: -32px;
+    animation: levitate 500ms ease 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes levitate {
+    0%{
+        margin-top: 0px;
+        opacity: .2;
+    }
+    100%{
+        margin-top: -35px;
+        opacity: 1;
+    }
+}
+
+.bar:hover:before{
+    background-color: red;
+    padding: 5px;
+    position: relative;
+    width: 15px;
+}
+
+.graph-container > .chart:nth-child(2) .subject li div.bar:hover {
+    background-color: #a174e7;
+}
+
+@media only screen and (max-width : 1024px){
+    /*standard break point*/
+}
+
+@media only screen and (max-width : 900px){
+    .subject span {
+        transform: rotate(90deg);
+        position: relative;
+        top: 25px;
+    }
+
+    .chart {
+        float: none;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+
+    .rating {
+        width: 132%;
+    }
+}
+
+@media only screen and (max-width : 650px){
+    .chart {
+        margin-top: 35%;
+    }
+
+    .rating {
+        width: 145%;
+    }
+}
+
+@media only screen and (max-width : 360px){
+    .rating {
+        width: 185%;
+    }
+}
