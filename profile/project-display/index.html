@@ -1,0 +1,95 @@
+<div class='projectContainer'>	
+	<div class='projectItems'>
+	  <input type="radio" id='project1' name='course-projects'>
+	  <label for="project1">CSS Components</label>
+	  
+	  <input type="radio" id='project2' name='course-projects'>
+	  <label for='project2'>Forms &amp; Inputs</label>
+	    
+	  <input type="radio" id='project3' name='course-projects'>
+	  <label for='project3'>Calculator</label>
+
+	  <input type="radio" id='project4' name='course-projects'>
+	  <label for='project4'>Product Listing Page</label>
+
+	  <input type="radio" id='project5' name='course-projects' checked='checked'>
+	  <label for='project5'>Canvass Puzzle</label>
+	</div>
+
+	<div class='projectPreview'>
+		<section id='previewProject1'>
+			<p>This is stuff about project1</p>
+		</section>
+
+		<section id='previewProject2'>
+			<p>This is stuff about project2</p>
+		</section>
+
+		<section id='previewProject3'>
+			<p>This is stuff about project2</p>
+		</section>
+	</div>
+</div>
+
+<style>
+	* {
+  		box-sizing: border-box;
+	}
+
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+
+	body {
+		font-family: 'Lato', sans-serif;
+	}
+
+	.projectContainer {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.projectContainer label {
+		display: block;
+	}
+
+	.projectItems {
+		width: 30%;
+		float: left;
+	}
+
+	.projectPreview {
+		border: 1px solid #c1c1c1;
+		width: 65%;
+		float: left;
+		margin-left: 5px;
+		height: 410px;
+	}
+
+	.projectContainer label {
+		list-style: none;
+		padding: 25px;
+		border: 1px #c1c1c1 solid;
+		margin-bottom: 15px;
+		border-radius: 3px;
+		cursor: pointer;
+		color: #878787;
+	}
+
+	input[type='radio']:checked + label{
+		border-left: 5px solid #ed2d91;
+		color: #444344;
+	}
+
+	input[type='radio']{
+		display: none;
+	}
+
+	#project1 < .projectItems {
+		border: 2px solid red;
+	}
+
+
+/*	#project1:checked ~ .projectPreview #previewProject1{
+		display: block;
+	}*/
+
+</style>
