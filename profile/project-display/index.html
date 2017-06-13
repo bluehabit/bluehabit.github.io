@@ -1,5 +1,9 @@
+<head>
+	<script src="https://use.fontawesome.com/4bdfd367f8.js"></script>	
+</head>
+
 <div class='projectContainer'>	
-	<div class='projectItems'>
+
 	  <input type="radio" id='project1' name='course-projects'>
 	  <label for="project1">CSS Components</label>
 	  
@@ -14,21 +18,43 @@
 
 	  <input type="radio" id='project5' name='course-projects' checked='checked'>
 	  <label for='project5'>Canvass Puzzle</label>
-	</div>
 
-	<div class='projectPreview'>
-		<section id='previewProject1'>
-			<p>This is stuff about project1</p>
-		</section>
+	<section id='previewProjectContainer'>
+		<div id='previewProject1'>
 
-		<section id='previewProject2'>
-			<p>This is stuff about project2</p>
-		</section>
+		<!-- 	<div class='blue'> -->
+			<div class='carousel'>
+				<img class='carousel-image' src="images/image1.png">
+			</div>
+	<!-- 		</div> -->
 
-		<section id='previewProject3'>
-			<p>This is stuff about project2</p>
-		</section>
-	</div>
+
+
+			<p class='descriptionParagraph'>A collection of various CSS components</p>
+		</div>
+
+		<div id='previewProject2'>
+			<p>preview project 2</p>
+		</div>
+
+		<div id='previewProject3'>
+			<p>preview project 3</p>
+		</div>
+
+		<div id='previewProject4'>
+			<p>preview project 4</p>
+		</div>
+
+		<div id='previewProject5'>
+			<p>preview project 5</p>
+		</div>
+	</section>
+
+
+	<p>Some stuff here</p>
+
+	<i class="fa fa-arrow-left" aria-hidden="true"></i>
+	<i class="fa fa-arrow-right" aria-hidden="true"></i>
 </div>
 
 <style>
@@ -42,6 +68,10 @@
 		font-family: 'Lato', sans-serif;
 	}
 
+/*	img {
+		max-width: 100%;
+	}*/
+
 	.projectContainer {
 		width: 100%;
 		margin: 0 auto;
@@ -49,19 +79,18 @@
 
 	.projectContainer label {
 		display: block;
-	}
-
-	.projectItems {
 		width: 30%;
-		float: left;
 	}
 
-	.projectPreview {
+	.projectContainer section {
 		border: 1px solid #c1c1c1;
 		width: 65%;
-		float: left;
-		margin-left: 5px;
+		float: right;
 		height: 410px;
+		display: block;
+		position: relative;
+		bottom: 425px;
+		right: 15px;
 	}
 
 	.projectContainer label {
@@ -83,13 +112,49 @@
 		display: none;
 	}
 
-	#project1 < .projectItems {
-		border: 2px solid red;
+	#previewProjectContainer > div {
+		display: none;
 	}
 
-
-/*	#project1:checked ~ .projectPreview #previewProject1{
+	#project1:checked ~ section > #previewProject1,
+	#project2:checked ~ section > #previewProject2,
+	#project3:checked ~ section > #previewProject3,
+	#project4:checked ~ section > #previewProject4,
+	#project5:checked ~ section > #previewProject5 {
 		display: block;
-	}*/
+	}
+
+	.blue {
+		padding: 15px;
+		width: 43%;
+		height: 325px;
+		background-color: #333333;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+
+	.descriptionParagraph {
+		color: red;
+		margin-left: 25px;
+	}
+
+	.carousel {
+		text-align: center;
+	}
+
+	.carousel-image {
+		max-height: 325px;
+	}
+
+	.fa-arrow-left {
+		font-size: 12px;
+		color: #ed298f;
+	}
+
+	.fa-arrow-right {
+		font-size: 12px;
+		color: #ed298f;
+	}	
 
 </style>
+
