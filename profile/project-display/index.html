@@ -19,18 +19,28 @@
 	  <input type="radio" id='project5' name='course-projects' checked='checked'>
 	  <label for='project5'>Canvass Puzzle</label>
 
+	  <input type="radio" id='project6' name='course-projects' checked='checked'>
+	  <label for='project6'>Another one.</label>
+
+
 	<section id='previewProjectContainer'>
 		<div id='previewProject1'>
 
-		<!-- 	<div class='blue'> -->
+		<div>
 			<div class='carousel'>
-				<img class='carousel-image' src="images/image1.png">
-				<i class="fa fa-arrow-left" aria-hidden="true"></i>
-				<i class="fa fa-arrow-right" aria-hidden="true"></i>
+					<img class='carousel-image' src="images/image1.png">
 			</div>
-	<!-- 		</div> -->
+			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+			<i class="fa fa-arrow-right" aria-hidden="true"></i>
+		</div>
 
-
+			<div class='slider-marker'>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 
 			<p class='descriptionParagraph'>A collection of various CSS components</p>
 		</div>
@@ -53,7 +63,7 @@
 	</section>
 
 
-	<p>Some stuff here</p>
+	<p>Some stuff here!</p>
 </div>
 
 <style>
@@ -67,13 +77,14 @@
 		font-family: 'Lato', sans-serif;
 	}
 
-/*	img {
-		max-width: 100%;
-	}*/
-
 	.projectContainer {
 		width: 100%;
-		margin: 0 auto;
+	}
+
+	#previewProjectContainer {
+		height: 515px;
+		position: relative;
+		margin-top: -85px;
 	}
 
 	.projectContainer label {
@@ -102,6 +113,19 @@
 		color: #878787;
 	}
 
+	.slider-marker {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.slider-marker span {
+		padding: 15px;
+		background-color: #ed298f;
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid #cfcfcf;
+	}
+
 	input[type='radio']:checked + label{
 		border-left: 5px solid #ed2d91;
 		color: #444344;
@@ -123,43 +147,37 @@
 		display: block;
 	}
 
-	.blue {
-		padding: 15px;
-		width: 43%;
-		height: 325px;
-		background-color: #333333;
-		margin: 0 auto;
-		margin-top: 15px;
-	}
-
 	.descriptionParagraph {
-		color: red;
 		margin-left: 25px;
 	}
 
 	.carousel {
-		text-align: center;
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	.carousel-image {
-		max-height: 325px;
+		max-height: 455px;
 	}
 
 	.fa-arrow-left {
-		font-size: 17px;
+		font-size: 22px;
 		color: #ed298f;
 		position: relative;
-		right: 363px;
-		bottom: 145px;
+		float: left;
+		bottom: 205px;
 		cursor: pointer;
+		left: 95px;
 	}
 
 	.fa-arrow-right {
-		font-size: 17px;
+		font-size: 22px;
 		color: #ed298f;
 		position: relative;
-		bottom: 145px;
+		float: right;
+		bottom: 205px;
 		cursor: pointer;
+		right: 95px;
 	}	
 
 </style>
