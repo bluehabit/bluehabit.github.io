@@ -26,24 +26,25 @@
 	<section id='previewProjectContainer'>
 		<div id='previewProject1'>
 
-		<div>
+	
 			<div class='carousel'>
 					<img class='carousel-image' src="images/image1.png">
+
+				<!-- 	<img class='carousel-image' src="images/image2.png"> -->
 			</div>
 			<i class="fa fa-arrow-left" aria-hidden="true"></i>
 			<i class="fa fa-arrow-right" aria-hidden="true"></i>
-		</div>
+		
 
 			<div class='slider-marker'>
-				<span></span>
-				<span></span>
+				<span class='activeSpan'></span>
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
 
 			<p class='descriptionParagraph'>A collection of various CSS components</p>
-		</div>
+		</div> <!--end previewProject1-->
 
 		<div id='previewProject2'>
 			<p>preview project 2</p>
@@ -120,15 +121,23 @@
 
 	.slider-marker span {
 		padding: 15px;
-		background-color: #ed298f;
+		background-color: #f3e9ee;
 		display: inline-block;
 		border-radius: 50%;
 		border: 2px solid #cfcfcf;
 	}
 
+	.slider-marker span.activeSpan {
+		background-color: #ed298f;
+		box-shadow: inset 7px 10px 43px -6px rgba(26,26,26,0.4);
+		border: 2px outset #cfcfcf;
+	}
+
 	input[type='radio']:checked + label{
 		border-left: 5px solid #ed2d91;
 		color: #444344;
+		background-color: #f6f6f6;
+		color: #ed2d91;
 	}
 
 	input[type='radio']{
@@ -179,19 +188,24 @@
 		cursor: pointer;
 		right: 95px;
 	}	
-	
-	.fa-arrow-small{
-		font-size: 15px;
-	}
-	
-	.projectContainer > span {
-		padding: 25px;
-		border: 1px #c1c1c1 solid;
-		margin-bottom: 15px;
-		cursor: pointer;
-		color: #878787;
-	}
-
 
 </style>
 
+<script>
+	var leftArrows = document.querySelectorAll('.fa-arrow-left');
+	var rightArrows = document.querySelectorAll('.fa-arrow-right');
+
+	leftArrows.forEach(function(item){
+		item.addEventListener('click', function(){
+			this.style.border ='2px solid red';
+		})
+	});
+
+	rightArrows.forEach(function(item){
+		item.addEventListener('click', function(){
+			this.style.border ='2px solid blue';
+		})
+	});
+
+
+</script>
