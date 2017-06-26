@@ -4,7 +4,7 @@
 
 <div class='projectContainer'>	
 
-	  <input type="radio" id='project1' name='course-projects'>
+	  <input type="radio" id='project1' name='course-projects' checked='checked'>
 	  <label for="project1">CSS Components</label>
 	  
 	  <input type="radio" id='project2' name='course-projects'>
@@ -16,24 +16,23 @@
 	  <input type="radio" id='project4' name='course-projects'>
 	  <label for='project4'>Product Listing Page</label>
 
-	  <input type="radio" id='project5' name='course-projects' checked='checked'>
+	  <input type="radio" id='project5' name='course-projects'>
 	  <label for='project5'>Canvass Puzzle</label>
 
-	  <input type="radio" id='project6' name='course-projects' checked='checked'>
+	  <input type="radio" id='project6' name='course-projects' >
 	  <label for='project6'>Another one.</label>
 
 
 	<section id='previewProjectContainer'>
-		<div id='previewProject1'>
+		<div id='previewProject1' class='previewPane'>
 
 	
 			<div class='carousel'>
 					<img class='carousel-image' src="images/image1.png">
-
-				<!-- 	<img class='carousel-image' src="images/image2.png"> -->
+					<!-- <img class='carousel-image' src="images/image2.png"> -->
 			</div>
-			<i class="fa fa-arrow-left" aria-hidden="true"></i>
-			<i class="fa fa-arrow-right" aria-hidden="true"></i>
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
 		
 
 			<div class='slider-marker'>
@@ -47,7 +46,22 @@
 		</div> <!--end previewProject1-->
 
 		<div id='previewProject2'>
-			<p>preview project 2</p>
+			<div class='carousel'>
+					<img class='carousel-image' src="images/image2.png">
+					<!-- <img class='carousel-image' src="images/image2.png"> -->
+			</div>
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 
 		<div id='previewProject3'>
@@ -161,12 +175,14 @@
 	}
 
 	.carousel {
-		width: 50%;
-		margin: 0 auto;
+	    width: 50%;
+	    margin: 0 auto;
+	    text-align:center;
 	}
 
 	.carousel-image {
-		max-height: 455px;
+		height: 416px;
+		width: 395px;
 	}
 
 	.fa-arrow-left {
@@ -192,33 +208,27 @@
 </style>
 
 <script>
-	var leftArrows = document.querySelectorAll('.fa-arrow-left');
-	var rightArrows = document.querySelectorAll('.fa-arrow-right');
+	var ghost = document.querySelectorAll('.arrows')
+	ghost.forEach(function(arrow){
+		arrow.addEventListener('click', function(mouseEvent){
+			var parentContainer = this.parentNode;
+			var currentArrow = this; 
+			var pinkSpans = parentContainer.querySelectorAll('.slider-marker > span');
 
-	leftArrows.forEach(function(item){
-		item.addEventListener('click', function(){
-			this.style.border ='2px solid red';
+
+			for(var i = 0; i < pinkSpans.length; i++){
+				pinkSpans[i].classList.toggle('activeSpan');
+			}
+
 		})
-	});
+	})
 
-	rightArrows.forEach(function(item){
-		item.addEventListener('click', function(){
-			this.style.border ='2px solid blue';
-		})
-	});
-	
-	var argv = yargs
-  .options({
-    a: {
-      demand: true,
-      alias: 'address',
-      describe: 'Address to fetch weather for',
-      string: true
-    }
-  })
-  .help()
-  .alias('help', 'h')
-  .argv;
 
+
+	//define callback
+	// function getSpan(span){
+
+	// }
 
 </script>
+
