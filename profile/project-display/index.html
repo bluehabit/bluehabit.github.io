@@ -4,6 +4,8 @@
 
 <div class='projectContainer'>	
 
+	<p id='hey'> hey </p>
+
 	  <input type="radio" id='project1' name='course-projects' checked='checked'>
 	  <label for="project1">CSS Components</label>
 	  
@@ -212,16 +214,51 @@
 	ghost.forEach(function(arrow){
 		arrow.addEventListener('click', function(mouseEvent){
 			var parentContainer = this.parentNode;
-			var currentArrow = this; 
-			var pinkSpans = parentContainer.querySelectorAll('.slider-marker > span');
+			var pinkSpans = parentContainer.querySelectorAll('.slider-marker > span'); //nodeList
 
+			var listItemsArray = Array.from(pinkSpans);
+			var activeIndex = -1;
+			var newIndex = 0;
 
-			for(var i = 0; i < pinkSpans.length; i++){
-				pinkSpans[i].classList.toggle('activeSpan');
+			
+			for(var i = 0; i < listItemsArray.length; i++){
+				if(listItemsArray[i].classList.contains('activeSpan')){
+					activeIndex = i;
+					console.log(activeIndex);
+
+					if(this.classList.contains('fa-arrow-right')){
+						listItemsArray[i].classList.remove('activeSpan');
+						newIndex = activeIndex + 1;
+
+						console.log(listItemsArray[newIndex]);
+						console.log(newIndex);
+						listItemsArray[newIndex].classList.toggle('activeSpan');
+					}
+
+				
+				}
 			}
 
+			
+
+			// if(this.classList.contains('fa-arrow-right')){
+			// 	console.log('right arrow')
+			// }
+
+			// if(this.classList.contains('fa-arrow-left')){
+			// 	console.log('left arrow')
+			// }
+
+			// listItemsArray.forEach(function(arrayItem){
+			// 	arrayItem.classList.remove('activeSpan');
+			// });
+
+		
 		})
 	})
+
+
+
 
 
 
