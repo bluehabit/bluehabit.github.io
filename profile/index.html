@@ -1,112 +1,236 @@
-<!DOCTYPE html>
-<html>
 <head>
-	<title>Profile Page</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://use.fontawesome.com/4bdfd367f8.js"></script>	
 </head>
-<body>
 
-	<nav>
-		<div>
-			<li class='authorItem'>Chris Feltus</li>
-			<li><a href='#aboutMe'>About</a></li>
-			<li><a href='#projects'>Projects</a></li>
-			<li><a href='#skills'>Skills</a></li>
-			<li><a href='#contact'>Contact</a></li>
+<div class='projectContainer'>	
+
+	  <input type="radio" id='project1' name='course-projects' checked='checked'>
+	  <label for="project1">CSS Components</label>
+	  
+	  <input type="radio" id='project2' name='course-projects'>
+	  <label for='project2'>Forms &amp; Inputs</label>
+	    
+	  <input type="radio" id='project3' name='course-projects'>
+	  <label for='project3'>Calculator</label>
+
+	  <input type="radio" id='project4' name='course-projects'>
+	  <label for='project4'>Product Listing Page</label>
+
+	  <input type="radio" id='project5' name='course-projects'>
+	  <label for='project5'>Canvass Puzzle</label>
+
+	  <input type="radio" id='project6' name='course-projects' >
+	  <label for='project6'>Another one.</label>
+
+
+	<section id='previewProjectContainer'>
+		<div id='previewProject1' class='previewPane'>
+
+	
+			<div class='carousel'>
+					<img class='carousel-image' src="images/image1.png">
+					<!-- <img class='carousel-image' src="images/image2.png"> -->
+			</div>
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<p class='descriptionParagraph'>A collection of various CSS components</p>
+		</div> <!--end previewProject1-->
+
+		<div id='previewProject2'>
+			<div class='carousel'>
+					<img class='carousel-image' src="images/image2.png">
+					<!-- <img class='carousel-image' src="images/image2.png"> -->
+			</div>
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 
-		<div class='fRight'>
-			<span>Search:</span>
-			<input type='search' id='profileSearch'>
+		<div id='previewProject3'>
+			<p>preview project 3</p>
 		</div>
-	</nav>
 
-	<section>
-		<blockquote>
-			"We are what we repeatedly do. Excellence, then, is not an act, but a habit."	
-		</blockquote>
-		<p>-Will Durant</p>
+		<div id='previewProject4'>
+			<p>preview project 4</p>
+		</div>
 
-		<h1 id='aboutMe'>About</h1>
-		<img class='profilePic' src="http://imgur.com/4qvnnSm.png">
-		<p>My name is Chris.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<img class='imgBorder' src="http://imgur.com/uQGaDjF.png">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<img class='imgBorder' src="http://imgur.com/mu7KJN4.png" height='527px' width='833px'>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-	</section>
-
-	<section>
-		<h1 id='projects'>Projects</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-	</section>
-
-    
-
-	<section>
-		<h1 id='skills'>Skills</h1>
-	   
-        <div>
-            <div class='front-back-bar'>   
-                <div class='front-bar'><span>70%</span></div>
-                <div class='back-bar'><span>30%</span></div>
-            </div>
-        </div>
-
-        <div class='mContainer'>
-            <div class='front-chart'>
-                <div class='inner-bar'>
-                </div>
-            </div>
-
-            <div class='back-chart'>
-            </div>
-        </div>
-
-	</section>
-
-	<section>
-		<h1 id='contact'>Contact</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
-
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
+		<div id='previewProject5'>
+			<p>preview project 5</p>
+		</div>
 	</section>
 
 
+	<p>Some stuff here!</p>
+</div>
 
-    <p class='skew'>This is some skewed text</p>
+<style>
+	* {
+  		box-sizing: border-box;
+	}
 
-    <script>
-        var bar = document.getElementById('bar')
-        var leadP = document.getElementById('leadP')
-    </script>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
 
-</body>
-</html>
+	body {
+		font-family: 'Lato', sans-serif;
+	}
+
+	.projectContainer {
+		width: 100%;
+	}
+
+	#previewProjectContainer {
+		height: 515px;
+		position: relative;
+		margin-top: -85px;
+	}
+
+	.projectContainer label {
+		display: block;
+		width: 30%;
+	}
+
+	.projectContainer section {
+		border: 1px solid #c1c1c1;
+		width: 65%;
+		float: right;
+		height: 410px;
+		display: block;
+		position: relative;
+		bottom: 425px;
+		right: 15px;
+	}
+
+	.projectContainer label {
+		list-style: none;
+		padding: 25px;
+		border: 1px #c1c1c1 solid;
+		margin-bottom: 15px;
+		border-radius: 3px;
+		cursor: pointer;
+		color: #878787;
+	}
+
+	.slider-marker {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.slider-marker span {
+		padding: 15px;
+		background-color: #f3e9ee;
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid #cfcfcf;
+	}
+
+	.slider-marker span.activeSpan {
+		background-color: #ed298f;
+		box-shadow: inset 7px 10px 43px -6px rgba(26,26,26,0.4);
+		border: 2px outset #cfcfcf;
+	}
+
+	input[type='radio']:checked + label{
+		border-left: 5px solid #ed2d91;
+		color: #444344;
+		background-color: #f6f6f6;
+		color: #ed2d91;
+	}
+
+	input[type='radio']{
+		display: none;
+	}
+
+	#previewProjectContainer > div {
+		display: none;
+	}
+
+	#project1:checked ~ section > #previewProject1,
+	#project2:checked ~ section > #previewProject2,
+	#project3:checked ~ section > #previewProject3,
+	#project4:checked ~ section > #previewProject4,
+	#project5:checked ~ section > #previewProject5 {
+		display: block;
+	}
+
+	.descriptionParagraph {
+		margin-left: 25px;
+	}
+
+	.carousel {
+	    width: 50%;
+	    margin: 0 auto;
+	    text-align:center;
+	}
+
+	.carousel-image {
+		height: 416px;
+		width: 395px;
+	}
+
+	.fa-arrow-left {
+		font-size: 22px;
+		color: #ed298f;
+		position: relative;
+		float: left;
+		bottom: 205px;
+		cursor: pointer;
+		left: 95px;
+	}
+
+	.fa-arrow-right {
+		font-size: 22px;
+		color: #ed298f;
+		position: relative;
+		float: right;
+		bottom: 205px;
+		cursor: pointer;
+		right: 95px;
+	}	
+
+
+</style>
+
+<script>
+	var arrows = document.querySelectorAll('.arrows');
+	arrows.forEach(function(arrow) {
+	    arrow.addEventListener('click', function(mouseEvent) {
+	        var spanContainer = this.parentNode.querySelector('.slider-marker');
+	        var allSpans = Array.from(spanContainer.querySelectorAll('span'));
+	        var pinkSpan = spanContainer.querySelector('.activeSpan'); //nodeList
+
+	        pinkSpan.classList.remove('activeSpan');
+	        if (this.classList.contains('fa-arrow-right')) {
+	            if (pinkSpan.nextElementSibling) {
+	                pinkSpan.nextElementSibling.classList.add('activeSpan');
+	            } else {
+	                allSpans[0].classList.add('activeSpan')
+	            }
+	        } else if (this.classList.contains('fa-arrow-left')) {
+	            if (pinkSpan.previousElementSibling) {
+	                pinkSpan.previousElementSibling.classList.add('activeSpan');
+	            } else {
+	                allSpans[allSpans.length - 1].classList.add('activeSpan')
+	            }
+	        }
+	    });
+	});
+</script>
+
