@@ -4,8 +4,6 @@
 
 <div class='projectContainer'>	
 
-	<p id='hey'> hey </p>
-
 	  <input type="radio" id='project1' name='course-projects' checked='checked'>
 	  <label for="project1">CSS Components</label>
 	  
@@ -64,10 +62,25 @@
 			</div>
 
 			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
-		</div>
+		</div> <!-- end previewProject2 -->
 
 		<div id='previewProject3'>
-			<p>preview project 3</p>
+			<div class='carousel'>
+				<img class='carousel-image' src="images/image2.png">
+				<!-- <img class='carousel-image' src="images/image2.png"> -->
+			</div>
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 
 		<div id='previewProject4'>
@@ -96,6 +109,7 @@
 
 	.projectContainer {
 		width: 100%;
+		user-select: none;
 	}
 
 	#previewProjectContainer {
@@ -207,65 +221,36 @@
 		right: 95px;
 	}	
 
+
 </style>
 
 <script>
-	var ghost = document.querySelectorAll('.arrows')
-	ghost.forEach(function(arrow){
+	var arrows = document.querySelectorAll('.arrows');
+
+	arrows.forEach(function(arrow){
 		arrow.addEventListener('click', function(mouseEvent){
-			var parentContainer = this.parentNode;
-			var pinkSpans = parentContainer.querySelectorAll('.slider-marker > span'); //nodeList
 
-			var listItemsArray = Array.from(pinkSpans);
-			var activeIndex = -1;
-			var newIndex = 0;
-
+			var spanContainer = this.parentNode.querySelector('.slider-marker')
+			var allSpans = spanContainer.querySelectorAll('span');
+			var activeSpan = spanContainer.querySelector('.activeSpan')
 			
-			for(var i = 0; i < listItemsArray.length; i++){
-				if(listItemsArray[i].classList.contains('activeSpan')){
-					activeIndex = i;
-					console.log(activeIndex);
-
-					if(this.classList.contains('fa-arrow-right')){
-						listItemsArray[i].classList.remove('activeSpan');
-						newIndex = activeIndex + 1;
-
-						console.log(listItemsArray[newIndex]);
-						console.log(newIndex);
-						listItemsArray[newIndex].classList.toggle('activeSpan');
-					}
-
-				
+			activeSpan.classList.remove('activeSpan');
+			if(this.classList.contains('fa-arrow-right')){
+				if(activeSpan.nextElementSibling){
+					activeSpan.nextElementSibling.classList.toggle('activeSpan');
+				} else {
+					allSpans[0].classList.toggle('activeSpan');
 				}
 			}
 
-			
-
-			// if(this.classList.contains('fa-arrow-right')){
-			// 	console.log('right arrow')
-			// }
-
-			// if(this.classList.contains('fa-arrow-left')){
-			// 	console.log('left arrow')
-			// }
-
-			// listItemsArray.forEach(function(arrayItem){
-			// 	arrayItem.classList.remove('activeSpan');
-			// });
-
-		
+			if(this.classList.contains('fa-arrow-left')){
+				if(activeSpan.previousElementSibling){
+					activeSpan.previousElementSibling.classList.toggle('activeSpan');
+				} else {
+					allSpans[allSpans.length - 1].classList.toggle('activeSpan');
+				}
+			}	
 		})
 	})
-
-
-
-
-
-
-	//define callback
-	// function getSpan(span){
-
-	// }
-
 </script>
 
