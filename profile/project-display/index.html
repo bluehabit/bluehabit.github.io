@@ -28,16 +28,25 @@
 
 	
 			<div class='carousel'>
-					<img class='carousel-image' src="images/image1.png">
-					<!-- <img class='carousel-image' src="images/image2.png"> -->
+					<div class='carousel-active'>
+						<img class='carousel-image' src="images/image1.png">
+					</div>
+					
+					<div>
+						<img class='carousel-image' src="images/loading.gif">
+					</div>
+
+					<div>
+						<img class='shrink' src="images/succulents.gif">
+					</div>
 			</div>
+
 			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
 			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
 		
 
 			<div class='slider-marker'>
 				<span class='activeSpan'></span>
-				<span></span>
 				<span></span>
 				<span></span>
 			</div>
@@ -46,49 +55,77 @@
 		</div> <!--end previewProject1-->
 
 		<div id='previewProject2'>
+			
 			<div class='carousel'>
-					<img class='carousel-image' src="images/image2.png">
-					<!-- <img class='carousel-image' src="images/image2.png"> -->
+					<div class='carousel-active'>
+						<img class='shrink2' src="images/form1.png">
+					</div>
 			</div>
+
 			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
 			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
 		
 
 			<div class='slider-marker'>
 				<span class='activeSpan'></span>
-				<span></span>
-				<span></span>
-				<span></span>
 			</div>
 
 			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div> <!-- end previewProject2 -->
 
 		<div id='previewProject3'>
+			
 			<div class='carousel'>
-				<img class='carousel-image' src="images/image2.png">
-				<!-- <img class='carousel-image' src="images/image2.png"> -->
+					<div class='carousel-active'>
+						<img class='carousel-image' src="images/calculator.png">
+					</div>
 			</div>
+
 			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
 			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
 		
 
 			<div class='slider-marker'>
 				<span class='activeSpan'></span>
-				<span></span>
-				<span></span>
-				<span></span>
 			</div>
 
 			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 
 		<div id='previewProject4'>
-			<p>preview project 4</p>
+			<div class='carousel'>
+					<div class='carousel-active'>
+						<img class='carousel-image' src="images/sushi-bar.png">
+					</div>
+			</div>
+
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+			</div>
+
+			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 
 		<div id='previewProject5'>
-			<p>preview project 5</p>
+			<div class='carousel'>
+					<div class='carousel-active'>
+						<img class='shrink3' src="images/canvass.png">
+					</div>
+			</div>
+
+			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+		
+
+			<div class='slider-marker'>
+				<span class='activeSpan'></span>
+			</div>
+
+			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
 	</section>
 
@@ -147,6 +184,7 @@
 	.slider-marker {
 		margin: 0 auto;
 		text-align: center;
+		margin-top: 2px;
 	}
 
 	.slider-marker span {
@@ -161,6 +199,7 @@
 		background-color: #ed298f;
 		box-shadow: inset 7px 10px 43px -6px rgba(26,26,26,0.4);
 		border: 2px outset #cfcfcf;
+		animation: fadeInBounce 395ms ease-out 1;
 	}
 
 	input[type='radio']:checked + label{
@@ -201,8 +240,35 @@
 		width: 395px;
 	}
 
+	.shrink {
+		width: 310px;
+		height: 439px;
+	}
+
+	.shrink2 {
+		height: 380px;
+		width: 624px;
+		padding-right: 55px;
+		margin-top: 15px;
+	}
+
+	.shrink3 {
+		height: 420px;
+		width: 652px;
+		padding-right: 105px;
+		margin-top: 15px;
+	}
+
+	.carousel > div {
+		display: none;
+	}
+
+	div.carousel-active {
+		display: block;
+	}
+
 	.fa-arrow-left {
-		font-size: 22px;
+		font-size: 32px;
 		color: #ed298f;
 		position: relative;
 		float: left;
@@ -212,13 +278,29 @@
 	}
 
 	.fa-arrow-right {
-		font-size: 22px;
+		font-size: 32px;
 		color: #ed298f;
 		position: relative;
 		float: right;
 		bottom: 205px;
 		cursor: pointer;
 		right: 95px;
+	}
+
+	@keyframes fadeInBounce {
+		0% {
+			opacity: 0;
+			transform: scale(1);
+		}
+
+		92% {
+			opacity: 100;
+			transform: scale(1.2);
+		}
+
+		100%{
+			transform: scale(1);
+		}
 	}	
 
 
@@ -233,21 +315,32 @@
 			var spanContainer = this.parentNode.querySelector('.slider-marker')
 			var allSpans = spanContainer.querySelectorAll('span');
 			var activeSpan = spanContainer.querySelector('.activeSpan')
+
+			var carousel = this.parentNode.querySelector('.carousel');
+			var activeCarousel = carousel.querySelector('.carousel-active');
+			console.log(carousel)
+			console.log(activeCarousel)
 			
 			activeSpan.classList.remove('activeSpan');
+			activeCarousel.classList.remove('carousel-active');
+
 			if(this.classList.contains('fa-arrow-right')){
 				if(activeSpan.nextElementSibling){
 					activeSpan.nextElementSibling.classList.toggle('activeSpan');
+					activeCarousel.nextElementSibling.classList.toggle('carousel-active');
 				} else {
 					allSpans[0].classList.toggle('activeSpan');
+					carousel.children[0].classList.toggle('carousel-active');
 				}
 			}
 
 			if(this.classList.contains('fa-arrow-left')){
 				if(activeSpan.previousElementSibling){
 					activeSpan.previousElementSibling.classList.toggle('activeSpan');
+					activeCarousel.previousElementSibling.classList.toggle('carousel-active');
 				} else {
 					allSpans[allSpans.length - 1].classList.toggle('activeSpan');
+					carousel.children[carousel.children.length - 1].classList.toggle('carousel-active');
 				}
 			}	
 		})
