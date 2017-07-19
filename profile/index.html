@@ -1,236 +1,380 @@
+<!DOCTYPE html>
+<html>
 <head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://use.fontawesome.com/4bdfd367f8.js"></script>	
 </head>
+<body>
 
-<div class='projectContainer'>	
+	<!-- <nav>
+		<div>
+			<li class='authorItem'>Chris Feltus</li>
+			
+			<li><a href='#aboutMe'>About</a></li>
+			<li><a href='#projects'>Projects</a></li>
+			<li><a href='#skills'>Skills</a></li>
+			<li><a href='#contact'>Contact</a></li>
 
-	  <input type="radio" id='project1' name='course-projects' checked='checked'>
-	  <label for="project1">CSS Components</label>
-	  
-	  <input type="radio" id='project2' name='course-projects'>
-	  <label for='project2'>Forms &amp; Inputs</label>
-	    
-	  <input type="radio" id='project3' name='course-projects'>
-	  <label for='project3'>Calculator</label>
-
-	  <input type="radio" id='project4' name='course-projects'>
-	  <label for='project4'>Product Listing Page</label>
-
-	  <input type="radio" id='project5' name='course-projects'>
-	  <label for='project5'>Canvass Puzzle</label>
-
-	  <input type="radio" id='project6' name='course-projects' >
-	  <label for='project6'>Another one.</label>
-
-
-	<section id='previewProjectContainer'>
-		<div id='previewProject1' class='previewPane'>
-
-	
-			<div class='carousel'>
-					<img class='carousel-image' src="images/image1.png">
-					<!-- <img class='carousel-image' src="images/image2.png"> -->
+			<div class='searchInput'>
+				<span>Search:</span>
+				<input type='search' id='profileSearch'>
 			</div>
-			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
-		
-
-			<div class='slider-marker'>
-				<span class='activeSpan'></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-
-			<p class='descriptionParagraph'>A collection of various CSS components</p>
-		</div> <!--end previewProject1-->
-
-		<div id='previewProject2'>
-			<div class='carousel'>
-					<img class='carousel-image' src="images/image2.png">
-					<!-- <img class='carousel-image' src="images/image2.png"> -->
-			</div>
-			<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-			<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
-		
-
-			<div class='slider-marker'>
-				<span class='activeSpan'></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-
-			<p class='descriptionParagraph'>Forms &amp; Inputs</p>
 		</div>
+	</nav> -->
 
-		<div id='previewProject3'>
-			<p>preview project 3</p>
+	<nav>
+		<ul>
+			<li class='authorItem'>Chris Feltus</li>
+			
+			<li><a href='#aboutMe'>About</a></li>
+			<li><a href='#projects'>Projects</a></li>
+			<li><a href='#skills'>Skills</a></li>
+			<li><a href='#contact'>Contact</a></li>
+		</ul>
+
+		<div class='searchInput'>
+			<span>Search:</span>
+			<input type='search' id='profileSearch'>
 		</div>
+	</nav>
 
-		<div id='previewProject4'>
-			<p>preview project 4</p>
-		</div>
+	<section>
+		<blockquote>
+			"We are what we repeatedly do. Excellence, then, is not an act, but a habit."	
+		</blockquote>
+		<p>-Will Durant</p>
 
-		<div id='previewProject5'>
-			<p>preview project 5</p>
+		<h1 id='aboutMe'>About</h1>
+		<img class='profilePic' src="http://imgur.com/4qvnnSm.png">
+		<p>My name is Chris.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
+
+		<img class='imgBorder' src="http://imgur.com/uQGaDjF.png">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
+
+		<img class='imgBorder' src="http://imgur.com/mu7KJN4.png" height='527px' width='833px'>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
+	</section>
+
+	<section>
+		<h1 id='projects'>Projects</h1>
+		<div class='projectContainer'>	
+
+			  <input type="radio" id='project1' name='course-projects' checked='checked'>
+			  <label for="project1">CSS Components</label>
+			  
+			  <input type="radio" id='project2' name='course-projects'>
+			  <label for='project2'>Forms &amp; Inputs</label>
+			    
+			  <input type="radio" id='project3' name='course-projects'>
+			  <label for='project3'>Calculator</label>
+
+			  <input type="radio" id='project4' name='course-projects'>
+			  <label for='project4'>Product Listing Page</label>
+
+			  <input type="radio" id='project5' name='course-projects'>
+			  <label for='project5'>Canvass Puzzle</label>
+
+			  <input type="radio" id='project6' name='course-projects' >
+			  <label for='project6'>Another one.</label>
+
+
+			<section id='previewProjectContainer'>
+				<div id='previewProject1' class='previewPane'>
+
+			
+					<div class='carousel'>
+							<div class='carousel-active'>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/image1.png">
+							</div>
+							
+							<div>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241507/portfolio/loading.gif">
+							</div>
+
+							<div>
+								<img class='shrink' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241507/portfolio/succulents.gif">
+							</div>
+					</div>
+
+				
+					<div>
+						<div class='slider-marker'>
+							<span class='activeSpan'></span>
+							<span></span>
+							<span></span>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<p class='descriptionParagraph'>A collection of various CSS components</p>
+				</div> <!--end previewProject1-->
+
+				<div id='previewProject2'>
+					
+					<div class='carousel'>
+							<div class='carousel-active'>
+								<img class='shrink2' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/form1.png">
+							</div>
+
+							<div>
+								<img class='shrink2' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/form1.png">
+							</div>
+
+							<div>
+								<img class='shrink2' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/form1.png">
+							</div>
+					</div>
+
+					<div>
+						<div class='slider-marker'>
+							<span class='activeSpan'></span>
+							<span></span>
+							<span></span>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+				</div> <!-- end previewProject2 -->
+
+				<div id='previewProject3'>
+					
+					<div class='carousel'>
+							<div class='carousel-active'>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/calculator.png">
+							</div>
+
+							<div>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/calculator.png">
+							</div>
+
+							<div>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/calculator.png">
+							</div>
+					</div>
+
+					<div>
+						<div class='slider-marker'>
+							<span class='activeSpan'></span>
+							<span></span>
+							<span></span>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+				</div>
+
+				<div id='previewProject4'>
+					<div class='carousel'>
+							<div class='carousel-active'>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/sushi-bar.png">
+							</div>
+
+							<div>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/sushi-bar.png">
+							</div>
+
+							<div>
+								<img class='carousel-image' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/sushi-bar.png">
+							</div>
+					</div>
+
+					<div>
+						<div class='slider-marker'>
+							<span class='activeSpan'></span>
+							<span></span>
+							<span></span>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+				</div>
+
+				<div id='previewProject5'>
+					<div class='carousel'>
+							<div class='carousel-active'>
+								<img class='shrink3' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/canvass.png">
+							</div>
+
+							<div>
+								<img class='shrink3' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/canvass.png">
+							</div>
+
+							<div>
+								<img class='shrink3' src="http://res.cloudinary.com/djx0pptcr/image/upload/v1500241506/portfolio/canvass.png">
+							</div>
+					</div>
+
+					<div>
+						<div class='slider-marker'>
+							<span class='activeSpan'></span>
+							<span></span>
+							<span></span>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+				</div>
+			</section>
+
+
+			<p>Some stuff here!</p>
 		</div>
 	</section>
 
+    
 
-	<p>Some stuff here!</p>
-</div>
+	<section>
+		<h1 id='skills'>Skills</h1>
+	   
+   	
+		<div class='percent-breakdown group'>
+			<span class='pink'>70% - Frontend</span>
+			<span class='purple'>30% - Backend</span>
+		</div>
 
-<style>
-	* {
-  		box-sizing: border-box;
-	}
+		<div class='graph-container'>
+			<div class='chart group'>
+				<ul class='rating'>
+					<li>Expert</li>
+					<li>Proficient</li>
+					<li>Competent</li>
+					<li>Learning</li>
+				</ul>
 
-	@import url('https://fonts.googleapis.com/css?family=Lato');
+				<ul class='subject'>
+					<li>
+						<div class='bar' data-protip='I love JS!'></div>
+						<span>Javascript</span>
+					</li>
 
-	body {
-		font-family: 'Lato', sans-serif;
-	}
+					<li>
+						<div class='bar' data-protip='CSS is annoying'></div>
+						<span>HTML/CSS</span>
+					</li>
 
-	.projectContainer {
-		width: 100%;
-	}
+					<li>
+						<div class='bar' data-protip='Learning this'></div>
+						<span>ReactJS</span>
+					</li>
 
-	#previewProjectContainer {
-		height: 515px;
-		position: relative;
-		margin-top: -85px;
-	}
+					<li>
+						<div class='bar' data-protip='I prefer vanilla js'></div>
+						<span>jQuery</span>
+					</li>
+				</ul>
+			</div>
 
-	.projectContainer label {
-		display: block;
-		width: 30%;
-	}
+			<div class='chart group'>
+				<ul class='rating'>
+					<li>Expert</li>
+					<li>Proficient</li>
+					<li>Competent</li>
+					<li>Learning</li>
+				</ul>
 
-	.projectContainer section {
-		border: 1px solid #c1c1c1;
-		width: 65%;
-		float: right;
-		height: 410px;
-		display: block;
-		position: relative;
-		bottom: 425px;
-		right: 15px;
-	}
+				<ul class='subject'>
+					<li>
+						<div class='bar' data-protip='learning it'></div>
+						<span>NodeJS</span>
+					</li>
 
-	.projectContainer label {
-		list-style: none;
-		padding: 25px;
-		border: 1px #c1c1c1 solid;
-		margin-bottom: 15px;
-		border-radius: 3px;
-		cursor: pointer;
-		color: #878787;
-	}
+					<li>
+						<div class='bar' data-protip='cool DB'></div>
+						<span>MongoDB</span>
+					</li>
 
-	.slider-marker {
-		margin: 0 auto;
-		text-align: center;
-	}
+					<li>
+						<div class='bar' data-protip='relational DB learning'></div>
+						<span>MySQL</span>
+					</li>
 
-	.slider-marker span {
-		padding: 15px;
-		background-color: #f3e9ee;
-		display: inline-block;
-		border-radius: 50%;
-		border: 2px solid #cfcfcf;
-	}
+					<li>
+						<div class='bar' data-protip='more relational DB'></div>
+						<span>PostgressQL</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-	.slider-marker span.activeSpan {
-		background-color: #ed298f;
-		box-shadow: inset 7px 10px 43px -6px rgba(26,26,26,0.4);
-		border: 2px outset #cfcfcf;
-	}
+	</section>
 
-	input[type='radio']:checked + label{
-		border-left: 5px solid #ed2d91;
-		color: #444344;
-		background-color: #f6f6f6;
-		color: #ed2d91;
-	}
+	<section>
+		<h1 id='contact'>Contact</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
 
-	input[type='radio']{
-		display: none;
-	}
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
 
-	#previewProjectContainer > div {
-		display: none;
-	}
-
-	#project1:checked ~ section > #previewProject1,
-	#project2:checked ~ section > #previewProject2,
-	#project3:checked ~ section > #previewProject3,
-	#project4:checked ~ section > #previewProject4,
-	#project5:checked ~ section > #previewProject5 {
-		display: block;
-	}
-
-	.descriptionParagraph {
-		margin-left: 25px;
-	}
-
-	.carousel {
-	    width: 50%;
-	    margin: 0 auto;
-	    text-align:center;
-	}
-
-	.carousel-image {
-		height: 416px;
-		width: 395px;
-	}
-
-	.fa-arrow-left {
-		font-size: 22px;
-		color: #ed298f;
-		position: relative;
-		float: left;
-		bottom: 205px;
-		cursor: pointer;
-		left: 95px;
-	}
-
-	.fa-arrow-right {
-		font-size: 22px;
-		color: #ed298f;
-		position: relative;
-		float: right;
-		bottom: 205px;
-		cursor: pointer;
-		right: 95px;
-	}	
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		</p>
+	</section>
 
 
-</style>
+    <p class='skew'>This is some skewed text</p>
 
-<script>
-	var arrows = document.querySelectorAll('.arrows');
-	arrows.forEach(function(arrow) {
-	    arrow.addEventListener('click', function(mouseEvent) {
-	        var spanContainer = this.parentNode.querySelector('.slider-marker');
-	        var allSpans = Array.from(spanContainer.querySelectorAll('span'));
-	        var pinkSpan = spanContainer.querySelector('.activeSpan'); //nodeList
+    <script>
+    var arrows = document.querySelectorAll('.arrows');
 
-	        pinkSpan.classList.remove('activeSpan');
-	        if (this.classList.contains('fa-arrow-right')) {
-	            if (pinkSpan.nextElementSibling) {
-	                pinkSpan.nextElementSibling.classList.add('activeSpan');
-	            } else {
-	                allSpans[0].classList.add('activeSpan')
-	            }
-	        } else if (this.classList.contains('fa-arrow-left')) {
-	            if (pinkSpan.previousElementSibling) {
-	                pinkSpan.previousElementSibling.classList.add('activeSpan');
-	            } else {
-	                allSpans[allSpans.length - 1].classList.add('activeSpan')
-	            }
-	        }
-	    });
-	});
-</script>
+		arrows.forEach(function(arrow){
+		arrow.addEventListener('click', function(mouseEvent){
+
+			var divContainer = this.parentNode.parentNode.parentNode;
+			var spanContainer = divContainer.querySelector('.slider-marker');
+
+			var allSpans = spanContainer.querySelectorAll('span');
+			var activeSpan = spanContainer.querySelector('.activeSpan')
+
+			var carousel = divContainer.querySelector('.carousel');
+			var activeCarousel = carousel.querySelector('.carousel-active');
+			
+			activeSpan.classList.remove('activeSpan');
+			activeCarousel.classList.remove('carousel-active');
+
+
+			if(this.classList.contains('fa-arrow-right')){
+				if(activeSpan.nextElementSibling && activeSpan.nextElementSibling.nodeName === 'SPAN'){
+					activeSpan.nextElementSibling.classList.toggle('activeSpan');
+					activeCarousel.nextElementSibling.classList.toggle('carousel-active');
+				} else {
+					allSpans[0].classList.toggle('activeSpan');
+					carousel.children[0].classList.toggle('carousel-active');
+				}
+			}
+
+			if(this.classList.contains('fa-arrow-left')){
+				if(activeSpan.previousElementSibling){
+					activeSpan.previousElementSibling.classList.toggle('activeSpan');
+					activeCarousel.previousElementSibling.classList.toggle('carousel-active');
+				} else {
+					allSpans[allSpans.length - 1].classList.toggle('activeSpan');
+					carousel.children[carousel.children.length - 1].classList.toggle('carousel-active');
+				}
+			}	
+		})
+	})
+    </script>
+
+</body>
+</html>
 
