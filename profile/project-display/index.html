@@ -23,6 +23,7 @@
 	  <label for='project6'>Another one.</label>
 
 
+
 	<section id='previewProjectContainer'>
 		<div id='previewProject1' class='previewPane'>
 
@@ -192,8 +193,7 @@
 	}
 
 	#previewProjectContainer {
-		height: 512px;
-		height: 535px;
+		height: 532px;
 		position: relative;
 		margin-top: -85px;
 	}
@@ -226,7 +226,7 @@
 
 	.slider-marker {
 		margin: 0 auto;
-		margin-top: 5px;
+		margin-top: 12px;
 		width: 33%;
 		text-align: center;
 	}
@@ -341,6 +341,33 @@
 			transform: scale(1);
 		}
 	}	
+
+
+	@media only screen and (max-width : 980px){
+	 	#previewProjectContainer {
+	 		position: static;
+	 		margin-top: 15px;
+	 	}
+
+	 	.projectContainer label {
+	 		display: block;
+	 		width: 54%;
+	 	}
+
+	 	.projectContainer section {
+	 		float: none;
+	 		position: static;
+	 		width: 80%;
+	 		margin: 0 auto;
+	 	}
+
+	 	.projectContainer label {
+	 		padding: 6px;
+	 		margin: 0 auto;
+	 		margin-bottom: 4px;
+	 	}
+
+	}
 </style>
 
 <script>
