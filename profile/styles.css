@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+    color: #1b1b1b;
 }
 
 nav {
@@ -20,20 +21,23 @@ nav li {
 	color: #e3e3e3;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 nav input[type='search'] {
 	margin-right: 15px;
-	width: 100%;
+}
+
+.searchInput {
+    float: right;
+    color: white;
+    display: inline-block;
+    padding-bottom: 18px;
 }
 
 img {
 	max-width: 100%;
-}
-
-.searchInput {
-	float: right;
-    color: white;
-    display: inline-block;
-    padding: 5px;
 }
 
 .authorItem {
@@ -56,7 +60,6 @@ img {
 	border: 2px solid #e8217f;
 	width: 150px;
     height: 150px;
-    /*width: 15%;*/
 	display: inline-block;
 }
 
@@ -118,6 +121,10 @@ a:visited{
     opacity: .9;
     float: left;
     margin-left: 12%;
+}
+
+div.percent-breakdown {
+/*    border: 2px solid red;*/
 }
 
 .group:after {
@@ -273,9 +280,14 @@ a:visited{
         margin-top: 15%;
     }
 
+    .graph-container > .chart:nth-child(1) {
+        margin-top: 2%;
+    }
+
     .rating {
         width: 132%;
     }
+
 }
 
 @media only screen and (max-width : 650px){
@@ -296,15 +308,6 @@ a:visited{
 
 
 /**For Projects Section**/
-    * {
-        box-sizing: border-box;
-    }
-
-    @import url('https://fonts.googleapis.com/css?family=Lato');
-
-    body {
-        font-family: 'Lato', sans-serif;
-    }
 
     .projectContainer {
         width: 100%;
@@ -312,9 +315,14 @@ a:visited{
     }
 
     #previewProjectContainer {
-        height: 512px;
+        height: 532px;
         position: relative;
         margin-top: -85px;
+    }
+
+    .projectContainer {
+        height: 540px;
+        display: inline-block;
     }
 
     .projectContainer label {
@@ -345,7 +353,7 @@ a:visited{
 
     .slider-marker {
         margin: 0 auto;
-        margin-top: 5px;
+        margin-top: 12px;
         width: 33%;
         text-align: center;
     }
@@ -401,24 +409,23 @@ a:visited{
     .carousel-image {
         height: 416px;
         width: 395px;
+        margin-top: 15px;
     }
 
     img.shrink {
-        width: 310px;
-        height: 439px;
+        width: 308px;
+        height: 431px;
     }
 
     img.shrink2 {
         height: 380px;
         width: 624px;
-        padding-right: 55px;
         margin-top: 15px;
     }
 
     img.shrink3 {
         height: 420px;
         width: 652px;
-        padding-right: 105px;
         margin-top: 15px;
     }
 
@@ -428,22 +435,6 @@ a:visited{
 
     div.carousel-active {
         display: block;
-    }
-
-    .fa-arrow-left {
-        font-size: 32px;
-        color: #ed298f;
-        position: relative;
-        float: left;
-        cursor: pointer;
-    }
-
-    .fa-arrow-right {
-        font-size: 32px;
-        color: #ed298f;
-        position: relative;
-        float: right;
-        cursor: pointer;
     }
 
     @keyframes fadeInBounce {
@@ -461,3 +452,56 @@ a:visited{
             transform: scale(1);
         }
     }   
+
+
+    @media only screen and (max-width : 980px){
+        #previewProjectContainer {
+            position: static;
+            margin-top: 15px;
+        }
+
+        .projectContainer label {
+            display: block;
+            width: 54%;
+        }
+
+        .projectContainer section {
+            float: none;
+            position: static;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .projectContainer label {
+            padding: 6px;
+            margin: 0 auto;
+            margin-bottom: 4px;
+        }
+
+   /*     .searchInput {
+            float: none;
+            color: white;
+            display: block;
+            padding-bottom: 18px;
+            width: 100%;
+        }*/
+
+    }  /*end media query*/
+
+
+
+    .fa-arrow-left {
+        font-size: 32px;
+        color: #ed298f;
+        position: relative;
+        float: left;
+        cursor: pointer;
+    }
+
+    .fa-arrow-right {
+        font-size: 32px;
+        color: #ed298f;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
