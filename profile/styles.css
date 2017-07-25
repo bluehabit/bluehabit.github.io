@@ -17,12 +17,17 @@ nav {
 nav li {
 	list-style: none;
 	float: left;
-	margin-left: 2.5em;
+    margin-left: 1.2em;
 	color: #e3e3e3;
+}
+
+ul {
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 nav input[type='search'] {
@@ -41,8 +46,9 @@ img {
 }
 
 .authorItem {
-	font-size: 1.3em;
-	transition: all .4s ease;
+	font-size: 1.1em;
+	transition: all .3s ease;
+    padding-bottom: 5px;
 }
 
 .authorItem:hover {
@@ -63,6 +69,7 @@ img {
 	display: inline-block;
 }
 
+
 a:selected{
 	color: red;
 }
@@ -74,7 +81,7 @@ a:visited{
 /*Styles the skills graph on site*/
 
 .graph-container {
-        width: 100%;
+    width: 100%;
 }
 
 /*first graph - front end*/
@@ -164,10 +171,6 @@ div.percent-breakdown {
     display: flex;
     justify-content: center;
     width: 25%;
-
-/*  display: inline-block;
-    margin-left: 38px;*/
-    /*-old code*/
 }
 
 .rating {
@@ -178,6 +181,7 @@ div.percent-breakdown {
     height: 62px;
     border-bottom: 1px solid grey;
     margin-bottom: 13px;
+    max-width: 95%;
 }
 
 .rating li:last-child {
@@ -266,7 +270,7 @@ div.percent-breakdown {
     /*standard break point*/
 }
 
-@media only screen and (max-width : 900px){
+@media only screen and (max-width : 1125px){
     .subject span {
         transform: rotate(90deg);
         position: relative;
@@ -284,8 +288,8 @@ div.percent-breakdown {
         margin-top: 2%;
     }
 
-    .rating {
-        width: 132%;
+    .rating li {
+        max-width: 100%;
     }
 
 }
@@ -477,18 +481,7 @@ div.percent-breakdown {
             margin: 0 auto;
             margin-bottom: 4px;
         }
-
-   /*     .searchInput {
-            float: none;
-            color: white;
-            display: block;
-            padding-bottom: 18px;
-            width: 100%;
-        }*/
-
     }  /*end media query*/
-
-
 
     .fa-arrow-left {
         font-size: 32px;
@@ -504,4 +497,50 @@ div.percent-breakdown {
         position: relative;
         float: right;
         cursor: pointer;
+    }
+
+    .contact-form {
+        clear: both;
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+        width: 11%;
+        cursor: pointer;
+    }
+
+    .burger-menu-animate {
+        animation: burger-menu 1000ms ease 1;
+    }
+
+    .horizontal-bar {
+        padding: 2px;
+        margin-bottom: 12px;
+        background-color: #e8217f;
+        transition: 0.4s;
+    }
+
+    .burger-menu div:first-child {
+        background-color: red;
+    }
+
+    @keyframes burger-menu  {
+        0% {
+
+        }
+
+        100% {
+        
+        }
+    }
+
+    @media only screen and (max-width : 760px){
+        nav ul  {
+            display: none;
+        }
+
+        .burger-menu {
+            display: block;
+        }
     }
