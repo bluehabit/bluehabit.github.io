@@ -9,31 +9,48 @@
 
 	<nav>
 		<div class='burger-menu'>
-			<div class='horizontal-bar bar1 change'></div>
-			<div class='horizontal-bar bar2 change'></div>
-			<div class='horizontal-bar bar3 change'></div>
+			<div class='bar1'></div>
+			<div class='bar2'></div>
+			<div class='bar3'></div>
 		</div>
-		<ul>
-			<li class='authorItem'>Chris Feltus</li>
-			<li><a href='#aboutMe'>About</a></li>
-			<li><a href='#projects'>Projects</a></li>
-			<li><a href='#skills'>Skills</a></li>
-			<li><a href='#contact'>Contact</a></li>
+
+		<ul class='top-list'>
+			<li class='bubbleItem'>
+				<a href='#aboutMe'>About</a>
+			</li>
+			<li class='bubbleItem'><a href='#projects'>Projects</a></li>
+			<li class='bubbleItem'><a href='#skills'>Skills</a></li>
+			<li class='bubbleItem'><a href='#contact'>Contact</a></li>
 
 			<div class='searchInput'>
 				<i class="fa fa-search" aria-hidden="true"></i>
 				<input type='search' id='profileSearch'>
 			</div>
 		</ul>
+
+		<div class='sliderMenu'>
+			<ul>
+				<li><a href='#aboutMe'>About</a></li>
+				<li><a href='#projects'>Projects</a></li>
+				<li><a href='#skills'>Skills</a></li>
+				<li><a href='#contact'>Contact</a></li>
+			</ul>
+		</div>
 	</nav>
 
 	<section>
 		<blockquote>
-			"We are what we repeatedly do. Excellence, then, is not an act, but a habit."	
-		</blockquote>
-		<p>-Will Durant</p>
+			<span class='curly-quotes'>We are what we repeatedly do. Excellence, then, is not an act, but a habit.</span>
 
-		<h1 id='aboutMe'>About</h1>
+			<p class='quote-attribution'>-- Will Durant</p>
+		</blockquote>
+
+		<div id='aboutMe' class="skills-title">
+			<h1 data-letter='a'>about me
+			<span></span>
+			</h1>
+		</div>
+
 		<p>
 		<img class='profilePic' src="images/profile.png">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -45,14 +62,23 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		</p>
 
-		<img class='imgBorder' src="images/before-after.png" height='527px' width='833px'>
+		<div>
+			<img class='imgBorder' src="images/before.png">
+			<img class='imgBorder' src="images/after.png">
+		</div>
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		</p>
 	</section>
 
 	<section>
-		<h1 id='projects'>Projects</h1>
+		<div id='projects' class="skills-title">
+			<h1 data-letter='P'>Projects
+			<span></span>
+			</h1>
+		</div>
+
 		<div class='projectContainer group'>	
 
 			  <input type="radio" id='project1' name='course-projects' checked='checked'>
@@ -127,8 +153,8 @@
 							<span class='activeSpan'></span>
 							<span></span>
 							<span></span>
-							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true" style="font-size: 35px"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true" style="font-size: 35px"></i>
 						</div>
 					</div>
 
@@ -156,12 +182,12 @@
 							<span class='activeSpan'></span>
 							<span></span>
 							<span></span>
-							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true" style="font-size: 35px"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true" style="font-size: 35px"></i>
 						</div>
 					</div>
 
-					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+					<p class='descriptionParagraph'>Calculator</p>
 				</div>
 
 				<div id='previewProject4'>
@@ -184,12 +210,12 @@
 							<span class='activeSpan'></span>
 							<span></span>
 							<span></span>
-							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true" style="font-size: 35px"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true" style="font-size: 35px"></i>
 						</div>
 					</div>
 
-					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+					<p class='descriptionParagraph'>Product Listing Page</p>
 				</div>
 
 				<div id='previewProject5'>
@@ -212,12 +238,12 @@
 							<span class='activeSpan'></span>
 							<span></span>
 							<span></span>
-							<i class="fa fa-arrow-left arrows"  aria-hidden="true"></i>
-							<i class="fa fa-arrow-right arrows" aria-hidden="true"></i>
+							<i class="fa fa-arrow-left arrows"  aria-hidden="true" style="font-size: 35px"></i>
+							<i class="fa fa-arrow-right arrows" aria-hidden="true" style="font-size: 35px"></i>
 						</div>
 					</div>
 
-					<p class='descriptionParagraph'>Forms &amp; Inputs</p>
+					<p class='descriptionParagraph'>Canvass Puzzle</p>
 				</div>
 			</section>
 
@@ -227,8 +253,11 @@
     
 
 	<section>
-		<h1 id='skills'>Skills</h1>
-	   
+	   	<div id='skills' class="skills-title chapterHeaderIndent">
+			<h1 data-letter='S'>Skills
+			<span></span>
+			</h1>
+		</div>
    	
 		<div class='percent-breakdown group'>
 			<span class='pink'>70% - Frontend</span>
@@ -246,7 +275,8 @@
 
 				<ul class='subject'>
 					<li>
-						<div class='bar' data-protip='I love JS!'></div>
+						<div class='bar' data-protip='I love JS!'>
+						</div>
 						<span>Javascript</span>
 					</li>
 
@@ -302,7 +332,13 @@
 	</section>
 
 	<section class='group contact-form'>
-		<h1 id='contact'>Contact</h1>
+		
+		 <div id='contact' class="skills-title chapterHeaderIndent">
+			<h1 data-letter='C'>Contact
+			<span></span>
+			</h1>
+		</div>
+
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		</p>
@@ -362,8 +398,14 @@
 
 	var burgerMenu = document.querySelector('.burger-menu');
 	burgerMenu.addEventListener('click', function(mouseEvent){
-		this.classList.toggle('burger-menu-animate');
-	})
+		this.classList.toggle('change');
+
+		var sliderMenu = document.querySelector('.sliderMenu');
+		console.log(sliderMenu)
+		sliderMenu.classList.toggle('expandSlider');
+	});
+
+
 
     </script>
 
