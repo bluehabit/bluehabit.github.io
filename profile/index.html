@@ -82,22 +82,22 @@
 		<div class='projectContainer group'>	
 
 			  <input type="radio" id='project1' name='course-projects' checked='checked'>
-			  <label for="project1">CSS Components</label>
+			  <label class='carouselLabel' for="project1">CSS Components</label>
 			  
 			  <input type="radio" id='project2' name='course-projects'>
-			  <label for='project2'>Forms &amp; Inputs</label>
+			  <label class='carouselLabel' for='project2'>Forms &amp; Inputs</label>
 			    
 			  <input type="radio" id='project3' name='course-projects'>
-			  <label for='project3'>Calculator</label>
+			  <label class='carouselLabel' for='project3'>Calculator</label>
 
 			  <input type="radio" id='project4' name='course-projects'>
-			  <label for='project4'>Product Listing Page</label>
+			  <label class='carouselLabel' for='project4'>Product Listing Page</label>
 
 			  <input type="radio" id='project5' name='course-projects'>
-			  <label for='project5'>Canvass Puzzle</label>
+			  <label class='carouselLabel' for='project5'>Canvass Puzzle</label>
 
 			  <input type="radio" id='project6' name='course-projects' >
-			  <label for='project6'>Another one.</label>
+			  <label class='carouselLabel' for='project6'>Another one.</label>
 
 
 			<section id='previewProjectContainer'>
@@ -339,21 +339,28 @@
 			</h1>
 		</div>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
+		<hr class='contact-divider'>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
+		<form>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		</p>
+		<div class='labelParentContainer'>
+		  <div>
+		    <input id="user-name" name="user-name" type="text" required>
+		    <label for="user-name">Your Name</label>
+		  </div>
+
+		  <div>
+		    <input id="user-email" name="user-email" type="email" required>
+		    <label for="user-email">Email</label>
+		  </div>
+		</div>
+
+
+			<label class='formLabel group' for='sendMessage'>Message:</label>
+			<textarea id='sendMessage' placeholder='Lets get in touch'></textarea>
+		</form>
+
 	</section>
-
-
-    <p class='skew'>This is some skewed text</p>
 
     <script>
     var arrows = document.querySelectorAll('.arrows');
