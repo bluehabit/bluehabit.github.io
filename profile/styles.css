@@ -10,6 +10,13 @@ body {
 	font-family: 'Lato', sans-serif;
     color: #79808a;
     font-size: 17px;
+    padding: 7px;
+}
+
+.detail-paragraph {
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: .05em;
 }
 
 blockquote {
@@ -150,8 +157,8 @@ img {
 .profilePic {
 	border-radius: 50%;
 	border: 2px solid #e8217f;
-	width: 150px;
-    height: 150px;
+	width: 165px;
+    height: 165px;
 	display: inline-block;
 }
 
@@ -584,7 +591,7 @@ div.carousel-active {
 @media only screen and (max-width : 980px){
 
     p {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
     }
 
     #previewProjectContainer {
@@ -958,3 +965,62 @@ img {
 }
 
 /* images */
+
+.submit-button {
+    background-color: #ea3398;
+    padding: 15px;
+    width: 135px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    transition: all .45s ease;
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 2px;
+}
+
+.submit-button:hover {
+    box-shadow: 9px 10px 32px 1px rgba(0,0,0,0.26);
+}
+
+.submit-button:active {
+    color: #322e30;
+}
+
+footer {
+    margin-top: 5%;
+    background-color: #1d1d1d;
+    padding: 8px;
+    height: 85px;
+    border-bottom: 5px solid #e8217f;
+}
+
+footer p {
+    color: white;
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.copyright {
+    margin-top: 14px;
+}
+
+.gitMark {
+    margin-top: 8px;
+    margin-left: 7px;
+}
