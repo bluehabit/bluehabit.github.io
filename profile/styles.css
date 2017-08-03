@@ -708,7 +708,7 @@ div.carousel-active {
         background-color: #e0e0e0;
         padding: 5px;
         width: 360px;
-        height: 315px;
+        height: 312px;
         position: relative;
         top: -59px;
         left: -10px;
@@ -834,31 +834,30 @@ label.formLabel {
 
 /*form label*/
 
-/*.labelParentContainer {
-  width: 50%;
+.labelParentContainer {
+  width: 75%;
   margin: 0 auto;
-}*/
+  margin-bottom: 6%;
+  margin-left: 22%;
+}
 
-/*.labelParentContainer > div {
+.labelParentContainer div {
   margin-top: 10%;
   float: left;
   width: 50%;
+  margin: 0 auto;
 }
-*/
 
-/*.labelParentContainer div {
+.labelParentContainer div {
   position: relative;
 }
-*/
-/*.labelParentContainer div > label {
+
+.labelParentContainer div > label {
   position: absolute;
   top: -1px;
-}*/
-
-/* */
+}
 
 form input {
-    width: 18%;
     padding-bottom: 2px;
     border: 0;
     border-bottom: 1px solid rgba(0,0,0,.12);
@@ -892,3 +891,70 @@ input:focus + label {
 input:valid + label{
   transform: translateY(-31px);
 }
+
+/** end form label **/
+
+
+
+/** images **/
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    color: red;
+    top: 81%;
+    left: 4%;
+}
+
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.ralewayHeader {
+    color: #008db1;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.imageContainer {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.imageContainer div {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+
+@media only screen and (max-width : 1600px){
+    .imageContainer {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 1300px){
+    .imageContainer {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 900px){
+    .imageContainer {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* images */
