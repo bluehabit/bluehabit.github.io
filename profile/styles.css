@@ -34,6 +34,10 @@ div.skills-title h1 {
     text-transform: uppercase;
 }
 
+#projects {
+    margin-bottom: 8%;
+}
+
 div.skills-title h1:after {
     content: attr(data-letter);
     position: absolute;
@@ -242,7 +246,6 @@ nav ul li.bubbleItem a {
 
 
 .chart {
-    /*width: 550px;*/
     height: 310px;
     background-color: #333333;
     border: 2px solid grey;
@@ -253,9 +256,6 @@ nav ul li.bubbleItem a {
     margin-left: 12%;
 }
 
-div.percent-breakdown {
-/*    border: 2px solid red;*/
-}
 
 .group:after {
   content: "";
@@ -318,7 +318,7 @@ div.percent-breakdown {
 .percent-breakdown span {
     padding: 8px;
     color: white;
-    font-weight: 600;
+    font-weight: 200;
     margin-bottom: 15px;
     display: block;
 }
@@ -341,7 +341,7 @@ div.percent-breakdown {
     background-color: #eb1584;
     width: 10%;
     height: 78px;
-    bottom: 40px;
+    bottom: 42px;
     position: absolute;
     cursor: pointer;
 }
@@ -439,13 +439,12 @@ div.percent-breakdown {
     width: 100%;
     user-select: none;
     margin-top: 5%;
-    margin-bottom: 12%;
 }
 
 #previewProjectContainer {
     height: 532px;
     position: relative;
-    margin-top: -85px;
+    margin-top: -155px;
 }
 
 .projectContainer {
@@ -612,6 +611,9 @@ div.carousel-active {
     }
 }  /*end media query*/
 
+
+
+
 .fa-arrow-left {
     font-size: 32px;
     color: #ed298f;
@@ -634,7 +636,7 @@ div.carousel-active {
 }
 
  .carouselLabel {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     color: #e8217f;
     text-transform: uppercase;
