@@ -62,9 +62,20 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		</p>
 
-		<div>
-			<img class='imgBorder' src="images/before.png">
-			<img class='imgBorder' src="images/after.png">
+		<div class='imageContainer group'>
+			<div class='relative'>
+				<img class='imgBorder' src="images/before.png">
+				<div>
+				<p class='absolute ralewayHeader'>Before</p>
+				</div>
+			</div>
+
+			<div class='relative'>
+				<img class='imgBorder' src="images/after.png">
+				<div>
+				<p class='absolute ralewayHeader'>After</p>
+				</div>
+			</div>
 		</div>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -341,19 +352,19 @@
 		<hr class='contact-divider'>
 
 		<form>
+			<div class='labelParentContainer'>
+			  
+			<div>
+			    <input id="user-name" name="user-name" type="text" required>
+			    <label for="user-name">Your Name</label>
+			 </div>
 
-		<div class='labelParentContainer'>
-		  <div>
-		    <input id="user-name" name="user-name" type="text" required>
-		    <label for="user-name">Your Name</label>
-		  </div>
+			<div>
+			    <input id="user-email" name="user-email" type="email" required>
+			    <label for="user-email">Email</label>
+			</div>
 
-		  <div>
-		    <input id="user-email" name="user-email" type="email" required>
-		    <label for="user-email">Email</label>
-		  </div>
-		</div>
-
+			</div><!--labelParentContainer-->
 
 			<label class='formLabel group' for='sendMessage'>Message:</label>
 			<textarea id='sendMessage' placeholder='Lets get in touch'></textarea>
