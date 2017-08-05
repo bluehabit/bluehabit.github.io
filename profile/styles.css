@@ -1026,3 +1026,19 @@ footer a {
 }
 
 /* smart phone queries GO HERE */
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px)
+  and (-webkit-min-device-pixel-ratio : 4) 
+  and (-webkit-device-pixel-ratio : 4)
+  and (orientation: portrait) {
+}
+
+@media screen
+	and (max-width : 750px) {
+		body {
+			background-color: purple;
+		}
+}
+
