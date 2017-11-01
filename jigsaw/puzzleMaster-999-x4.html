@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hexagon Puzzle</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="piece_and_container.css">
+</head>
+<body>
+
+<div class='mainContainer'>
+	<div class='puzzleCanvas'>	
+		<img class='puzzleSolved' src='_Puzzle_solved.png'>
+		<img class='puzzleUnsolved' src='_Puzzle_bg_unsolved.png'>
+
+		<div data-match='05' data-occupied='false' class='match'></div>
+		<div data-match='06' data-occupied='false' class='match'></div>
+		<div data-match='07' data-occupied='false' class='match'></div>
+		<div data-match='08' data-occupied='false' class='match'></div>
+		<div data-match='09' data-occupied='false' class='match'></div>
+		<div data-match='10' data-occupied='false' class='match'></div>
+		<div data-match='11' data-occupied='false' class='match'></div>
+		<div data-match='12' data-occupied='false' class='match'></div>
+		<div data-match='13' data-occupied='false' class='match'></div>
+		<div data-match='14' data-occupied='false' class='match'></div>
+		<div data-match='15' data-occupied='false' class='match'></div>
+		<div data-match='16' data-occupied='false' class='match'></div>
+		<div data-match='17' data-occupied='false' class='match'></div>
+		<div data-match='19' data-occupied='false' class='match'></div>
+		<div data-match='20' data-occupied='false' class='match'></div>
+		<div data-match='21' data-occupied='false' class='match'></div>
+		<div data-match='22' data-occupied='false' class='match'></div>
+		<div data-match='23' data-occupied='false' class='match'></div>
+		<div data-match='24' data-occupied='false' class='match'></div>
+		<div data-match='25' data-occupied='false' class='match'></div>
+		<div data-match='26' data-occupied='false' class='match'></div>
+		<div data-match='27' data-occupied='false' class='match'></div>
+		<div data-match='28' data-occupied='false' class='match'></div>
+		<div data-match='29' data-occupied='false' class='match'></div>
+		<div data-match='30' data-occupied='false' class='match'></div>
+		<div data-match='31' data-occupied='false' class='match'></div>
+		<div data-match='32' data-occupied='false' class='match'></div>
+		<div data-match='33' data-occupied='false' class='match'></div>
+		<div data-match='34' data-occupied='false' class='match'></div>
+		<div data-match='35' data-occupied='false' class='match'></div>
+		<div data-match='36' data-occupied='false' class='match'></div>
+		<div data-match='37' data-occupied='false' class='match'></div>
+		<div data-match='38' data-occupied='false' class='match'></div>
+		<div data-match='39' data-occupied='false' class='match'></div>
+		<div data-match='40' data-occupied='false' class='match'></div>
+		<div data-match='41' data-occupied='false' class='match'></div>
+		<div data-match='42' data-occupied='false' class='match'></div>
+		<div data-match='43' data-occupied='false' class='match'></div>
+		<div data-match='44' data-occupied='false' class='match'></div>
+		<div data-match='45' data-occupied='false' class='match'></div>
+		<div data-match='99' data-occupied='false' class='match'></div>
+
+
+		<div class='temp'>
+		<img data-match='05' class='shadowed' src='pieces/Group 5.png'>
+		<img data-match='06' class='shadowed' src='pieces/Group 6.png'>
+		<img data-match='07' class='shadowed' src='pieces/Group 7.png'>
+		<img data-match='08' class='shadowed' src='pieces/Group 8.png'>
+		<img data-match='09' class='shadowed' src='pieces/Group 9.png'>
+		<img data-match='10' class='shadowed' src='pieces/Group 10.png'>
+		<img data-match='11' class='shadowed' src='pieces/Group 11.png'>
+		<img data-match='12' class='shadowed' src='pieces/Group 12.png'>
+		<img data-match='13' class='shadowed' src='pieces/Group 13.png'>
+		<img data-match='14' class='shadowed' src='pieces/Group 14.png'>
+		<img data-match='15' class='shadowed' src='pieces/Group 15.png'>
+		<img data-match='16' class='shadowed' src='pieces/Group 16.png'>
+		<img data-match='17' class='shadowed' src='pieces/Group 17.png'>
+		<img data-match='19' class='shadowed' src='pieces/Group 19.png'>
+		<img data-match='20' class='shadowed' src='pieces/Group 20.png'>
+		<img data-match='21' class='shadowed' src='pieces/Group 21.png'>
+		<img data-match='22' class='shadowed' src='pieces/Group 22.png'>
+		<img data-match='23' class='shadowed' src='pieces/Group 23.png'>
+		<img data-match='24' class='shadowed' src='pieces/Group 24.png'>
+		<img data-match='25' class='shadowed' src='pieces/Group 25.png'>
+		<img data-match='26' class='shadowed' src='pieces/Group 26.png'>
+		<img data-match='27' class='shadowed' src='pieces/Group 27.png'>
+		<img data-match='28' class='shadowed' src='pieces/Group 28.png'>
+		<img data-match='29' class='shadowed' src='pieces/Group 29.png'>
+		<img data-match='30' class='shadowed' src='pieces/Group 30.png'>
+		<img data-match='31' class='shadowed' src='pieces/Group 31.png'>
+		<img data-match='32' class='shadowed' src='pieces/Group 32.png'>
+		<img data-match='33' class='shadowed' src='pieces/Group 33.png'>
+		<img data-match='34' class='shadowed' src='pieces/Group 34.png'>
+		<img data-match='35' class='shadowed' src='pieces/Group 35.png'>
+		<img data-match='36' class='shadowed' src='pieces/Group 36.png'>
+		<img data-match='37' class='shadowed' src='pieces/Group 37.png'>
+		<img data-match='38' class='shadowed' src='pieces/Group 38.png'>
+		<img data-match='39' class='shadowed' src='pieces/Group 39.png'>
+		<img data-match='40' class='shadowed' src='pieces/Group 40.png'>
+		<img data-match='41' class='shadowed' src='pieces/Group 41.png'>
+		<img data-match='42' class='shadowed' src='pieces/Group 42.png'>
+		<img data-match='43' class='shadowed' src='pieces/Group 43.png'>
+		<img data-match='44' class='shadowed' src='pieces/Group 44.png'>
+		<img data-match='45' class='shadowed' src='pieces/Group 45.png'>
+		<img data-match='99' class='shadowed' src='pieces/Group 99.png'>
+		</div>
+
+		<div class='helperBar'>
+			<button class='hint'>Hint?</button>
+			<button class='reset'>Reset</button>
+
+			<div class='parentProgress'>
+				<div class='progress'>
+			</div>
+		</div>
+
+		<div class='babyContainer'>	
+			<p class='time'></p>
+		</div>
+
+	</div><!--puzzleContainer-->
+
+
+	<div class='difficultyContainer'>
+		<h2>Select Difficulty</h2>
+		<button class='uv'>Novice</button>
+		<button class='nightmare'>Nightmare</button>
+	</div>
+</div>
+</div>
+
+<div class='modal'>
+	<p></p>
+	<button class='retry'>Play Again?</button>
+</div>
+
+<button class='startPuzzle'>Begin</button>
+
+<script type="text/javascript" src='puzzle.js'></script>
+</body>
+</html>

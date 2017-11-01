@@ -1,0 +1,457 @@
+	
+	.temp > img {
+		position: absolute;
+	}
+
+	/*cool affect toggle that moves puzzle pieces back*/
+	.transitionAll {
+		transition: all 2s ease;
+	}
+
+	.noMoreHints {
+		border: 2px solid red;
+		background-color: #30292b;
+	}
+
+	img[data-match="05"]{
+		border: 2px solid purple;
+	}
+
+	img[data-match="06"]{
+		border: 2px solid blue;
+	}
+
+	img[data-match="07"]{
+		border: 2px solid pink;
+	}
+
+	img[data-match="08"]{
+		border: 2px solid darkorange;
+	}
+
+	img[data-match="09"]{
+		border: 2px solid antiquewhite;
+	}
+
+	img[data-match="10"]{
+		border: 2px solid darkgreen;
+	}
+
+	img[data-match="11"]{
+		border: 2px solid darkgoldenrod;
+	}
+
+	img[data-match="12"]{
+		border: 2px solid red;
+	}
+
+	img[data-match="13"]{
+		border: 2px solid fuchsia;
+	}
+
+	img[data-match="14"]{
+		border: 2px solid black;
+	}
+
+	img[data-match="15"]{
+		border: 2px solid chartreuse;
+	}
+
+	img[data-match="16"]{
+		border: 2px solid cornflowerblue;
+	}
+
+	img[data-match="17"]{
+		border: 2px solid chocolate;
+	}
+
+	img[data-match="19"]{
+		border: 2px solid crimson;
+	}
+
+	img[data-match="20"]{
+		border: 2px solid darkslategray;
+	}
+
+	img[data-match="21"]{
+		border: 2px solid lightpink;
+	}
+
+	img[data-match="22"]{
+		border: 2px solid olive;
+	}
+
+	img[data-match="23"]{
+		border: 2px solid white;
+	}
+
+	img[data-match="24"]{
+		border: 2px solid blue;
+	}
+
+	img[data-match="25"]{
+		border: 2px solid red;
+	}
+
+	img[data-match="26"]{
+		border: 2px solid purple;
+	}
+
+	img[data-match="27"]{
+		border: 2px solid yellow;
+	}
+
+	img[data-match="28"]{
+		border: 2px solid beige;
+	}
+
+	img[data-match="29"]{
+		border: 2px solid black;
+	}
+
+	img[data-match="30"]{
+		border: 2px solid red;
+	}
+
+	img[data-match="31"]{
+		border: 2px solid fuchsia;
+	}
+
+	img[data-match="32"]{
+		border: 2px solid yellow;
+	}
+
+	img[data-match="33"]{
+		border: 2px solid orange;
+	}
+
+	img[data-match="34"]{
+		border: 2px solid aqua;
+	}
+
+	img[data-match="35"]{
+		border: 2px solid teal;
+	}
+
+
+	img[data-match="36"]{
+		border: 2px solid teal;
+	}
+
+	img[data-match="37"]{
+		border: 2px solid brown;
+	}
+
+	img[data-match="38"]{
+		border: 2px solid gold;
+	}
+
+	img[data-match="39"]{
+		border: 2px solid aquamarine;
+	}
+
+	img[data-match="40"]{
+		border: 2px solid fuchsia;
+	}
+
+	img[data-match="41"]{
+		border: 2px solid green;
+	}
+
+	img[data-match="42"]{
+		border: 2px solid blue;
+	}
+
+	img[data-match="43"]{
+		border: 2px solid orange;
+	}
+
+	img[data-match="44"]{
+		border: 2px solid red;
+	}
+
+	img[data-match="45"]{
+		border: 2px solid pink;
+	}
+
+	img[data-match="99"]{
+		border: 2px solid gray;
+	}
+
+	/*position puzzle container divs*/
+	div[data-match]{
+		width: 110px;
+		position: absolute;
+		opacity: .2;
+	}
+
+	/*************************************************/
+
+	div[data-match='05']{
+		bottom: 147px;
+		left: 664px;
+		background-color: purple;
+	}
+
+	div[data-match='06']{
+		bottom: 244px;
+		left: 664px;
+		background-color: blue;
+	}
+
+	div[data-match='07']{
+		left: 579px;
+		bottom: 99px;
+		background-color: pink;
+	}
+
+	div[data-match='08']{
+		bottom: 196px;
+    	left: 579px;
+		background-color: darkorange;
+	}
+
+	div[data-match='09']{
+		left: 495px;
+		bottom: 147px;
+		background-color: antiquewhite;
+	}
+
+	div[data-match='10']{
+		left: 495px;
+		bottom: 243px;
+		background-color: darkgreen;
+	}
+
+	div[data-match='11']{
+		left: 411px;
+		bottom: 99px;
+		background-color: darkgoldenrod;
+	}
+
+	div[data-match='12']{
+		left: 411px;
+		bottom: 196px;
+		background-color: red;
+	}
+
+	div[data-match='13']{
+		left: 327px;
+		bottom: 147px;
+		background-color: fuchsia;
+	}
+
+	div[data-match='14']{
+		left: 327px;
+		bottom: 244px;
+		background-color: black;
+	}
+
+	div[data-match='15']{
+		left: 243px;
+		bottom: 99px;
+		background-color: chartreuse;
+	}
+
+	div[data-match='16']{
+		left: 243px;
+		bottom: 196px;
+		background-color: cornflowerblue;
+	}
+
+	div[data-match='17']{
+		bottom: 147px;
+		left: 159px;
+		background-color: chocolate;
+	}
+
+	div[data-match='19']{
+		bottom: 49px;
+		left: 664px;
+		background-color: crimson;
+	}
+
+	div[data-match='20']{
+		bottom: 50px;
+		left: 495px;
+		background-color: darkslategray;
+	}
+
+	div[data-match='21']{
+		bottom: 50px;
+		left: 327px;
+		background-color: lightpink;
+	}
+
+	div[data-match='22']{
+		bottom: 50px;
+		left: 159px;
+		background-color: olive;
+	}
+
+	div[data-match='23']{
+		bottom: 50px;
+		left: -9px;
+		background-color: white;
+	}
+
+	div[data-match='24']{
+		bottom: 99px;
+		left: 75px;
+		background-color: blue;
+	}
+
+	div[data-match='25']{
+		bottom: 196px;
+		left: 75px;
+		background-color: red;
+	}
+
+	div[data-match='26']{
+		bottom: 148px;
+		left: -9px;
+		background-color: purple;
+	}
+
+	div[data-match='27']{
+		bottom: 246px;
+		left: -9px;
+		background-color: yellow;
+	}
+
+	div[data-match='28']{
+		bottom: 341px;
+		left: 664px;
+		background-color: beige;
+	}
+
+	div[data-match='29']{
+		bottom: 438px;
+		left: 664px;
+		background-color: black;
+	}
+
+	div[data-match='30']{
+		left: 579px;
+		bottom: 293px;
+		background-color: red;
+	}
+
+	div[data-match='31']{
+		left: 579px;
+		bottom: 390px;
+		background-color: fuchsia;
+	}
+
+	div[data-match='32']{
+		left: 495px;
+		bottom: 341px;
+		background-color: yellow;
+	}
+
+	div[data-match='33']{
+		left: 495px;
+		bottom: 438px;
+		background-color: orange;
+	}
+
+	div[data-match='34']{
+		left: 411px;
+   		bottom: 293px;
+		background-color: aqua;
+	}
+
+	div[data-match='35']{
+		left: 411px;
+   		bottom: 391px;
+		background-color: teal;
+	}
+
+	div[data-match='36']{
+		left: 327px;
+   		bottom: 341px;
+		background-color: white;
+	}
+
+	div[data-match='37']{
+		left: 327px;
+    	bottom: 439px;
+		background-color: brown;
+	}
+
+	div[data-match='38']{
+		left: 243px;
+    	bottom: 293px;
+		background-color: gold;
+	}
+
+	div[data-match='39']{
+		left: 243px;
+    	bottom: 390px;
+		background-color: aquamarine;
+	}
+
+	div[data-match='40']{
+		bottom: 341px;
+    	left: 159px;
+		background-color: fuchsia;
+	}
+
+	div[data-match='41']{
+		bottom: 438px;
+    	left: 159px;
+		background-color: green;
+	}
+
+	div[data-match='42']{
+		bottom: 293px;
+   		left: 75px;
+		background-color: blue;
+	}
+
+	div[data-match='43']{
+		bottom: 391px;
+    	left: 75px;
+		background-color: orange;
+	}
+
+	div[data-match='44']{
+		bottom: 342px;
+    	left: -9px;
+		background-color: red;
+	}
+
+	div[data-match='45']{
+		bottom: 440px;
+    	left: -9px;
+		background-color: pink;
+	}
+
+	div[data-match='99']{
+		bottom: 244px;
+    	left: 159px;
+		background-color: grey;
+	}
+
+	div[data-occupied="true"] {
+	  border: 5px dashed red;
+	}
+
+
+	/*Hide For Debugging*/
+	div[data-match]{
+		opacity: 0;
+	}
+
+	img[data-match]{
+		border: none;
+	}
+
+/*	img[data-match]{
+		border: 2px solid red;
+		display: none;
+	}
+*/
+	.vanish {
+		display: none;
+	}
