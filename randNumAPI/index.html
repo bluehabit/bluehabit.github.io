@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Numbers API</title>
+</head>
+<body>
+	<div id='numContainer'>
+		<h2>Random Fact About the Number: <span id='generatedNum'></span></h2>
+		<p class='results'></p>
+	</div>
+
+	<button>New Number</button>
+</body>
+</html>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+#numContainer{
+	width: 55%;
+	margin: 0 auto;
+	background-color: #edeaea;
+	height: 250px;
+}
+
+#numContainer h2 {
+	background-color: #1d1d1d;
+	color: white;
+	padding: 15px;
+	border-bottom: 4px solid #e8217f;
+}
+
+#generatedNum {
+	color: #e8217f;
+	font-size: 1.2em;
+	padding-left: 8px;
+}
+
+#numContainer .results {
+	padding: 12px;
+	font-size: 1.152em;
+	margin-top: 25px;
+	margin-left: 12px;
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	margin-top: 15px;
+	background-color: #e8217f;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	padding: 15px;
+	border: 2px outset #af2264;
+	transition: all .35s ease;
+}
+
+button:hover {
+	background-color: #970a4d;
+}
+
+button:focus {
+	outline:0;
+}
+
+</style>
+
+<script>
+//http://numbersapi.com/03/
+var randomNumber = randomNum();
+var newNumButton = document.querySelector('button');
+
+var generatedNumber = document.getElementById('generatedNum');
+var xhr = new XMLHttpRequest();
+var results = document.querySelector('.results');
+
+xhr.onload = function(){
+	console.log(randomNumber)
+
+	if(xhr.status === 200){
+		var numberFactString = xhr.response;
+		results.textContent = numberFactString;
+	} else {
+		results.textContent = 'There was an error: ' + xhr.status;
+	}
+}
+
+function randomNum(){
+	return Math.floor(Math.random() * 100) + 1; 
+}
+
+newNumButton.addEventListener('click', function(){
+	var newRandomNumber = randomNum();
+	var xhr = new XMLHttpRequest();
+
+	xhr.onload = function(){
+		if(xhr.status === 200){
+			var numberFactString = xhr.response;
+			results.textContent = numberFactString;
+		} else {
+			results.textContent = 'There was an error: ' + xhr.status;
+		}
+	}
+
+	xhr.open('GET', `http://numbersapi.com/${newRandomNumber}/trivia`)
+	xhr.send();
+
+	generatedNumber.textContent = newRandomNumber;
+});
+
+// xhr.open('GET', 'http://www.omdbapi.com/?t=star+wars&apikey=c5182e2a');
+xhr.open('GET', `http://numbersapi.com/${randomNumber}/trivia`)
+xhr.send();
+
+generatedNumber.textContent = randomNumber;
+
+
+
+</script>
