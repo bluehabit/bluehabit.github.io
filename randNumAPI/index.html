@@ -108,14 +108,14 @@ newNumButton.addEventListener('click', function(){
 		}
 	}
 
-	xhr.open('GET', `http://numbersapi.com/${newRandomNumber}/trivia`)
+	xhr.open('GET', `https://numbersapi.com/${newRandomNumber}/trivia`)
 	xhr.send();
 
 	generatedNumber.textContent = newRandomNumber;
 });
 
-// xhr.open('GET', 'http://www.omdbapi.com/?t=star+wars&apikey=c5182e2a');
-xhr.open('GET', `http://numbersapi.com/${randomNumber}/trivia`)
+// xhr.open('GET', 'https://www.omdbapi.com/?t=star+wars&apikey=c5182e2a');
+xhr.open('GET', `https://numbersapi.com/${randomNumber}/trivia`)
 xhr.send();
 
 generatedNumber.textContent = randomNumber;
